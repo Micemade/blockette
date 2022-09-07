@@ -1,0 +1,42 @@
+{
+	"version": 2,
+	"settings": {
+		"color": {
+			"palette": [ 
+				{
+					"slug": "background",
+					"color": "#7A4495",
+					"name": "Background"
+				},
+				{
+					"slug": "foreground",
+					"color": "#FCE2DB",
+					"name": "Foreground"
+				},
+				{
+					"slug": "primary",
+					"color": "#FF8FB1",
+					"name": "Primary"
+				},
+				{
+					"slug": "secondary",
+					"color": "#B270A2",
+					"name": "Secondary"
+				},
+				{
+					"slug": "tertiary",
+					"color": "#FCE2DB",
+					"name": "Tertiary"
+				},
+				{
+					"slug": "transparent",
+					"color": "transparent",
+					"name": "Transparent"
+				}
+			]
+		},
+		"custom": {
+			"text-shadow": "0 2px 5px rgba(0, 0, 0, 0.2);"
+		}
+	}
+}

@@ -1,0 +1,157 @@
+/*
+Theme Name: Blockette
+Author: Alen Sirola
+Author URI: 
+Theme URI: 
+Tags: full-site-editing, editor-style, block-styles, block-patterns
+Text Domain: blockette
+Requires at least: 6.0
+Requires PHP: 7.4
+Tested up to: 6.0
+Version: 1.0.0
+
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+
+All files, unless otherwise stated, are released under the GNU General Public
+License version 2.0 (http://www.gnu.org/licenses/gpl-2.0.html)
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned
+with others.
+*/
+
+/* Frontend styles only. */
+html {
+	scroll-behavior: smooth;
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+	html {
+		scroll-behavior: auto;
+	}
+}
+
+body {
+	-moz-osx-font-smoothing: grayscale;
+	-webkit-font-smoothing: antialiased;
+}
+
+/**
+ * Sticky header only for screens above 782px width.
+ */
+@media screen and (min-width: 783px) {
+	.is-style-blockette-sticky {
+		position: sticky;
+		top: 0;
+		z-index: 999;
+	}
+	/* Sticky header if WP admin bar is on. */
+	.admin-bar .is-style-blockette-sticky {
+		top: 32px;
+	}
+}
+
+/*
+ * Navigation modal if WP admin bar is on.
+ */
+.admin-bar .has-modal-open {
+	top: 32px
+}
+/* Mobile WP admin bar */
+@media screen and (max-width: 782px) {
+	.admin-bar .has-modal-open {
+		top: 46px
+	}
+}
+
+/*
+ * Increase horizontal padding on smaller screens.
+ * Temporary solution to avoid text content
+ * running up to the edge of the browser window,
+ * making the text difficult to read.
+
+@media ( max-width: 1024px ) {
+
+	main > :not(.alignfull),
+	main .wp-block-query > :not(.alignfull),
+	main .entry-content > :not(.alignfull):not(ul):not(ol),
+	main .entry-content .wp-block-columns.alignfull p {
+		padding-left: var(--wp--custom--h-spacing);
+		padding-right: var(--wp--custom--h-spacing);
+	}
+}
+*/
+:root {
+	--blockette-transition: cubic-bezier(0.165, 0.84, 0.44, 1)
+}
+
+body .blockette-animate-init {
+	opacity: 1;
+	visibility: visible;
+	transform: translateY(0) translateX(0) scale(1) rotate(0)
+}
+
+.blockette-animate {
+	opacity: 0;
+	visibility: hidden;
+	transition-property: opacity, transform;
+}
+
+.blockette-move-up {
+	transform: translateY(30px)
+}
+
+.blockette-move-down {
+	transform: translateY(-30px)
+}
+
+.blockette-move-right {
+	transform: translateX(-40px)
+}
+
+.blockette-move-left {
+	transform: translateX(40px)
+}
+
+.blockette-flip {
+	transform: perspective(500px) translateY(60px) scaleY(.75) rotateX(-40deg)
+}
+
+.blockette-scale {
+	transform: scale(0.5)
+}
+
+.blockette-flip,
+.blockette-move-down,
+.blockette-move-up,
+.blockette-move-right,
+.blockette-move-left,
+.blockette-scale {
+	transition-duration: .7s;
+	transition-timing-function: var(--blockette-transition)
+}
+
+.blockette-delay-1 {
+	transition-delay: .1s
+}
+
+.blockette-delay-3 {
+	transition-delay: .3s
+}
+
+.blockette-delay-5 {
+	transition-delay: .5s
+}
+
+.blockette-delay-7 {
+	transition-delay: .7s
+}
+
+.blockette-delay-10 {
+	transition-delay: 1s
+}
+
+.blockette-delay-20 {
+	transition-delay: 2s
+}

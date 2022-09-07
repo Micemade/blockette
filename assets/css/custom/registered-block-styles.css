@@ -1,0 +1,140 @@
+/*
+ * CSS for registered block styles.
+ * See inc/register-block-styles.php.
+ */
+
+/* Flat button */
+.is-style-blockette-flat-button .wp-block-button__link,
+.is-style-blockette-flat-button .wp-block-button__link:hover,
+.is-style-blockette-flat-button .wp-block-button__link:focus,
+.is-style-blockette-flat-button .wp-block-button__link:active,
+.is-style-blockette-flat-button .wp-block-button__link:visited {
+	box-shadow: none;
+	border-radius: 0;
+	margin-top: initial;
+	margin-bottom: initial;
+}
+
+/* Pill button */
+.is-style-blockette-pill-button .wp-block-button__link,
+.is-style-blockette-pill-button .wp-block-button__link:hover,
+.is-style-blockette-pill-button .wp-block-button__link:focus,
+.is-style-blockette-pill-button .wp-block-button__link:active,
+.is-style-blockette-pill-button .wp-block-button__link:visited {
+	border-radius: 5em;
+}
+
+/* Button with shadow */
+.is-style-blockette-with-shadow .wp-block-button__link,
+.is-style-blockette-with-shadow .wp-block-button__link:hover,
+.is-style-blockette-with-shadow .wp-block-button__link:focus,
+.is-style-blockette-with-shadow .wp-block-button__link:visited {
+	box-shadow: var(--wp--custom--button-shadow);
+}
+
+.is-style-blockette-with-shadow .wp-block-button__link:active {
+	box-shadow: var(--wp--custom--button-highlight);
+}
+
+/* Navigation menu - button style */
+.is-style-blockette-navigation-button button.wp-block-navigation__responsive-container-close,
+.is-style-blockette-navigation-button button.wp-block-navigation__responsive-container-open {
+	font-size: var(--wp--preset--font-size--small);
+	font-family: var(--wp--preset--font-family--system);
+	line-height: 1.7;
+	padding: 0;
+	border: 2px solid var(--wp--custom--button-border-color);
+	border-radius: var(--wp--custom--input-border-radius);
+	background: var(--wp--preset--color--secondary);
+	color: var(--wp--preset--color--foreground);
+	box-shadow: var(--wp--custom--small-button-shadow);
+}
+
+.is-style-blockette-navigation-button button.wp-block-navigation__responsive-container-close:hover,
+.is-style-blockette-navigation-button button.wp-block-navigation__responsive-container-open:hover,
+.is-style-blockette-navigation-button button.wp-block-navigation__responsive-container-close:focus,
+.is-style-blockette-navigation-button button.wp-block-navigation__responsive-container-open:focus {
+	color: var(--wp--preset--color--foreground);
+	filter: brightness(94%) !important;
+	box-shadow: var(--wp--custom--small-button-shadow);
+}
+
+.is-style-blockette-navigation-button button.wp-block-navigation__responsive-container-close:active,
+.is-style-blockette-navigation-button button.wp-block-navigation__responsive-container-open:active {
+	border-color: var(--wp--custom--button-border-color);
+	box-shadow: var(--wp--custom--button-highlight);
+	color: var(--wp--preset--color--foreground);
+	filter: brightness(93%) !important;
+	margin-top: 1px;
+	margin-bottom: -1px;
+}
+
+.is-style-blockette-navigation-button button.wp-block-navigation__responsive-container-close:visited,
+.is-style-blockette-navigation-button button.wp-block-navigation__responsive-container-open:visited {
+	background-color: initial;
+	border-color: var(--wp--custom--button-border-color);
+	color: var(--wp--preset--color--foreground);
+	box-shadow: var(--wp--custom--small-button-shadow);
+}
+
+/* Navigation menu button with shadow */
+.is-style-blockette-nav-button-shadow button.wp-block-navigation__responsive-container-close,
+.is-style-blockette-nav-button-shadow button.wp-block-navigation__responsive-container-open {
+	font-size: var(--wp--preset--font-size--small);
+	font-family: var(--wp--preset--font-family--system);
+	line-height: 1.7;
+	padding: 0;
+	border: 2px solid var(--wp--custom--button-border-color);
+	border-radius: var(--wp--custom--input-border-radius);
+	background: var(--wp--preset--color--secondary);
+	color: var(--wp--preset--color--foreground);
+	box-shadow: var(--wp--custom--button-shadow);
+}
+
+.is-style-blockette-nav-button-shadow button.wp-block-navigation__responsive-container-close:hover,
+.is-style-blockette-nav-button-shadow button.wp-block-navigation__responsive-container-open:hover,
+.is-style-blockette-nav-button-shadow button.wp-block-navigation__responsive-container-close:focus,
+.is-style-blockette-nav-button-shadow button.wp-block-navigation__responsive-container-open:focus {
+	color: var(--wp--preset--color--foreground);
+	filter: brightness(94%) !important;
+	box-shadow: var(--wp--custom--small-button-shadow);
+}
+
+.is-style-blockette-nav-button-shadow button.wp-block-navigation__responsive-container-close:active,
+.is-style-blockette-nav-button-shadow button.wp-block-navigation__responsive-container-open:active {
+	border-color: var(--wp--custom--button-border-color);
+	box-shadow: var(--wp--custom--button-highlight);
+	color: var(--wp--preset--color--foreground);
+	filter: brightness(93%) !important;
+	margin-top: 1px;
+	margin-bottom: -1px;
+}
+
+.is-style-blockette-nav-button-shadow button.wp-block-navigation__responsive-container-close:visited,
+.is-style-blockette-nav-button-shadow button.wp-block-navigation__responsive-container-open:visited {
+	background-color: initial;
+	border-color: var(--wp--custom--button-border-color);
+	color: var(--wp--preset--color--foreground);
+	box-shadow: var(--wp--custom--small-button-shadow);
+}
+
+/* Text shadow */
+.is-style-blockette-text-shadow {
+	text-shadow: var(--wp--custom--text-shadow);
+}
+
+/* Box shadow */
+.is-style-blockette-box-shadow {
+	box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.1);
+}
+
+/* Blockquote */
+.is-style-blockette-inverted {
+	background: var(--wp--preset--color--foreground);
+	padding: 1.25em;
+	padding-top: 0.75em;
+	color: var(--wp--preset--color--background)
+}
+.is-style-blockette-inverted > p {
+	margin-top: initial;
+}
