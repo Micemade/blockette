@@ -50,14 +50,15 @@ class Init {
 		add_action( 'after_setup_theme', array( $this, 'setup' ) );
 
 		// Register block styles and patterns.
+		add_action( 'init', array( $this, 'block_pattern_categories' ), 5 );
 		add_action( 'init', array( $this, 'block_patterns' ), 10 );
 		add_action( 'init', array( $this, 'block_styles' ), 10 );
 
-		// Unregister blocks patterns (priority is higher, to hook after 'register_block_patterns').
+		// Unregister blocks patterns (hook after 'register_block_patterns').
 		add_action( 'init', array( $this, 'unregister_block_patterns' ), 20 );
 
 		// Register block variation.
-		add_action( 'enqueue_block_editor_assets', array( $this, 'register_block_variations' ) );
+		add_action( 'enqueue_block_editor_assets', array( $this, 'block_scripts' ) );
 
 		// Enqueue styles.
 		add_action( 'wp_enqueue_scripts', array( $this, 'styles' ) );
@@ -65,6 +66,7 @@ class Init {
 
 		// Load editor styles.
 		add_action( 'admin_init', array( $this, 'editor_styles' ) );
+		add_action( 'admin_bar_menu', array( $this, 'admin_toolbar_links' ), 100 );
 
 		// Additional WP filters.
 		$this->filters();
@@ -80,6 +82,7 @@ class Init {
 	public function setup() {
 
 		add_theme_support( 'wp-block-styles' );
+		// Styles applied to frontend and editor.
 		add_editor_style( BLOCKETTE_URI . 'assets/css/style-shared.min.css' );
 
 		/*
@@ -102,8 +105,15 @@ class Init {
 	/**
 	 * Register Block Patterns.
 	 */
+	public function block_pattern_categories() {
+		Block_Patterns::register_categories();
+	}
+
+	/**
+	 * Register Block Patterns.
+	 */
 	public function block_patterns() {
-		new Block_Patterns();
+		Block_Patterns::register_patterns();
 	}
 
 	/**
@@ -159,7 +169,7 @@ class Init {
 	 *
 	 * @return void
 	 */
-	public function register_block_variations() {
+	public function block_scripts() {
 		wp_enqueue_script(
 			'blockette-block-variations',
 			BLOCKETTE_URI . 'assets/js/block-variation.js',
@@ -221,8 +231,7 @@ class Init {
 		$font_families = array(
 			'Outfit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,100;1,200;1,300;1,400;1,500;1,600',
 			'Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,100;1,200;1,300;1,400;1,500;1,600',
-			'Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,100;1,200;1,300;1,400;1,500;1,600',
-			'Ibarra+Real+Nova:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,100;1,200;1,300;1,400;1,500;1,600',
+			'Inter:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,100;1,200;1,300;1,400;1,500;1,600',
 		);
 
 		$fonts_url = add_query_arg(
@@ -246,7 +255,68 @@ class Init {
 	}
 
 	/**
-	 * Unregister a core block pattern and a block pattern category.
+	 * Admin toolbar links
+	 *
+	 * @param object $admin_bar object to add menu links (site editor, template and template parts editor).
+	 *
+	 * @return void
+	 */
+	public function admin_toolbar_links( $admin_bar ) {
+		$admin_bar->add_menu(
+			array(
+				'id'    => 'blockette-admin-bar',
+				'title' => 'Blockette theme',
+				'href'  => '#',
+				'meta'  => array(
+					'title'  => __( 'Blockette site editor', 'blockette' ),
+					'target' => '_self',
+					'class'  => 'blockette-theme-admin',
+				),
+			)
+		);
+		$admin_bar->add_menu(
+			array(
+				'id'     => 'blockette-site-editor',
+				'parent' => 'blockette-admin-bar',
+				'title'  => 'Site editor',
+				'href'   => admin_url( 'site-editor.php' ),
+				'meta'   => array(
+					'title'  => __( 'Site editor', 'blockette' ),
+					'target' => '_self',
+					'class'  => 'blockette-admin-link-editor',
+				),
+			)
+		);
+		$admin_bar->add_menu(
+			array(
+				'id'     => 'templates',
+				'parent' => 'blockette-admin-bar',
+				'title'  => __( 'Templates', 'blockette' ),
+				'href'   => admin_url( 'site-editor.php?postType=wp_template' ),
+				'meta'   => array(
+					'title'  => __( 'Templates', 'blockette' ),
+					'target' => '_self',
+					'class'  => 'blockette-admin-link-templates',
+				),
+			)
+		);
+		$admin_bar->add_menu(
+			array(
+				'id'     => 'template-parts',
+				'parent' => 'blockette-admin-bar',
+				'title'  => __( 'Template parts', 'blockette' ),
+				'href'   => admin_url( 'site-editor.php?postType=wp_template_part' ),
+				'meta'   => array(
+					'title'  => __( 'Template parts', 'blockette' ),
+					'target' => '_self',
+					'class'  => 'blockette-admin-link-template-parts',
+				),
+			)
+		);
+	}
+
+	/**
+	 * Unregister core block patterns and/or block pattern categories.
 	 * Must be called after added patterns and pattern categories.
 	 *
 	 * @see https://developer.wordpress.org/reference/functions/unregister_block_pattern/
@@ -257,6 +327,8 @@ class Init {
 	 * @return void
 	 */
 	public function unregister_block_patterns() {
+		// Remove core block patterns.
+		// remove_theme_support( 'core-block-patterns' ); // remove core patterns.
 		unregister_block_pattern( 'core/query-small-posts' );
 		unregister_block_pattern( 'core/query-large-title-posts' );
 		unregister_block_pattern( 'core/query-offset-posts' );

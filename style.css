@@ -1,9 +1,9 @@
 /*
 Theme Name: Blockette
-Author: Alen Sirola
-Author URI: 
-Theme URI: 
-Tags: full-site-editing, editor-style, block-styles, block-patterns
+Author: Micemade
+Author URI: https://micemade.com
+Theme URI: https://micemade.com/blockette
+Tags: site-editor, full-site-editing, editor-style, block-styles, block-patterns, patterns, templates, template-parts
 Text Domain: blockette
 Requires at least: 6.0
 Requires PHP: 7.4
@@ -21,7 +21,10 @@ Use it to make something cool, have fun, and share what you've learned
 with others.
 */
 
-/* Frontend styles only. */
+/*
+ * Frontend styles only.
+ */
+
 html {
 	scroll-behavior: smooth;
 }
@@ -37,17 +40,19 @@ body {
 	-webkit-font-smoothing: antialiased;
 }
 
-/**
+/*
  * Sticky header only for screens above 782px width.
  */
-@media screen and (min-width: 783px) {
-	.is-style-blockette-sticky {
+@media screen and (min-width: 782px) {
+	.is-style-blockette-sticky,
+	.is-style-blockette-sticky-shadow {
 		position: sticky;
 		top: 0;
 		z-index: 999;
 	}
 	/* Sticky header if WP admin bar is on. */
-	.admin-bar .is-style-blockette-sticky {
+	.admin-bar .is-style-blockette-sticky,
+	.admin-bar .is-style-blockette-sticky-shadow {
 		top: 32px;
 	}
 }
@@ -66,22 +71,8 @@ body {
 }
 
 /*
- * Increase horizontal padding on smaller screens.
- * Temporary solution to avoid text content
- * running up to the edge of the browser window,
- * making the text difficult to read.
-
-@media ( max-width: 1024px ) {
-
-	main > :not(.alignfull),
-	main .wp-block-query > :not(.alignfull),
-	main .entry-content > :not(.alignfull):not(ul):not(ol),
-	main .entry-content .wp-block-columns.alignfull p {
-		padding-left: var(--wp--custom--h-spacing);
-		padding-right: var(--wp--custom--h-spacing);
-	}
-}
-*/
+ * Animations.
+ */
 :root {
 	--blockette-transition: cubic-bezier(0.165, 0.84, 0.44, 1)
 }

@@ -1,21 +1,19 @@
 === Blockette ===
-Contributors: Alen Sirola
-Tested up to: 6.0
+Contributors: Micemade
+Tested up to: 6.0.2
 Requires at least: 6.0
 Requires PHP: 7.4
 Version: 1.0.0
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
-Copyright: Alen Sirola
+Copyright: Micemade
 
-A full site editing theme. Advanced version.
-
-== Guide ==
+A full site editing block theme.
 
 === Folder structure ===
 
 - Assets. Images, JavaScript, and CSS files.
-- Inc. Filters, fonts, block variations, registered block styles.
+- Inc. classes, filters, fonts, block variations, registered block styles.
 - Parts. HTML template parts.
 - Patterns. Block pattern examples.
 - Styles. Global style variations.
@@ -28,44 +26,6 @@ theme.json    -Settings and default styles.
 license.txt   -GPL v2
 readme.txt    -Information about the theme.
 screenshot.png
-
-=== Tooling ===
-
-You can install the tools by opening yor terminal in the themes root folder
-and entering the following commands:
-npm install
-composer install
-
-==== CSS ====
-
-This theme includes both human-readable and minified CSS inside the assets/css folder.
-For improved performance, the theme loads the minified CSS on the front and in the editor.
-
-To make changes to the CSS:
-1) Edit the human readable CSS file (the .css file that does not end with .min.css)
-2) Minify the CSS by running the command: gulp
-
-To add additional block styles:
-1) Create a new CSS file inside the assets/css/blocks folder.
-Use the slug of the block as the file name: latest-comments.css
-2) Next, open functions.php and add the slug to the $styled_blocks array inside the setup function.
-3) Minify the CSS with the command: gulp
-
-To watch for changes, use the command: gulp watch
-
-To compare your code against the CSS coding standards, use the command: npm run lint:css
-
-==== PHP ====
-
-To compare your code against the PHP coding standards,
-use the command: composer standards:check
-
-For PHPStan analysis, use the command: composer analyze
-
-==== JavaScript ====
-
-To compare your code against the JavasCript coding standards,
-use the command: npm run lint:js
 
 == Changelog ==
 1.0.0 Initial release
@@ -109,6 +69,26 @@ License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
 Images
 Images from pxhere.com. Public domain:
-https://pxhere.com/en/photo/927190 -woman with curly hair
-https://pxhere.com/en/photo/1049910 -woman with t-shirt
-https://pxhere.com/en/photo/1604358 -woman with headphones
+
+https://pxhere.com/en/photo/633680
+https://pxhere.com/en/photo/527808
+https://pxhere.com/en/photo/527819
+https://pxhere.com/en/photo/1218703
+https://pxhere.com/en/photo/527791
+https://pxhere.com/en/photo/527794
+https://pxhere.com/en/photo/527789
+https://pxhere.com/en/photo/527793
+https://pxhere.com/en/photo/527822
+https://pxhere.com/en/photo/527825
+https://pxhere.com/en/photo/527810
+
+Images from pexels.com, CC0 licenced (https://www.pexels.com/license/):
+https://www.pexels.com/photo/woman-in-grey-long-sleeved-shirt-2787341/
+https://www.pexels.com/photo/woman-wearing-black-hoodie-2787351/
+https://www.pexels.com/photo/photo-of-a-beautiful-woman-3093939/
+https://www.pexels.com/photo/woman-wearing-brown-fur-beanies-and-white-and-balck-top-2681751/
+https://www.pexels.com/photo/photo-of-laughing-woman-in-white-fur-coat-and-shiny-dress-standing-in-front-of-gray-wall-3769148/
+https://www.pexels.com/photo/woman-wearing-gray-shirt-holding-head-428338/
+https://www.pexels.com/photo/woman-wearing-black-full-zip-leather-jacket-leaning-on-black-metal-fence-2916814/
+
+Shopping cart icon by Icons8: https://icons8.com/icon/59997/shopping-cart

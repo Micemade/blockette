@@ -1,7 +1,6 @@
 const gulp = require('gulp'),
 	clean = require('gulp-clean'),
 	concatCss = require('gulp-concat-css'),
-	cssnano = require('gulp-cssnano'),
 	rename = require('gulp-rename'),
 	cleanCSS = require('gulp-clean-css');
 
@@ -34,7 +33,7 @@ gulp.task('clean-blocks', function () {
 });
 
 gulp.task('minify-shared', function () {
-	return gulp.src('assets/css/custom/*.css')
+	return gulp.src('assets/css/style-shared/*.css')
 		.pipe(concatCss('style-shared.min.css'))
 		.pipe(cleanCSS())
 		.pipe(gulp.dest('assets/css/'));

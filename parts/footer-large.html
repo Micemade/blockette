@@ -11,7 +11,7 @@
 
 			<!-- wp:group {"layout":{"type":"flex","flexWrap":"nowrap"}} -->
 			<div class="wp-block-group">
-				<!-- wp:site-logo {"width":58} /-->
+				<!-- wp:site-logo {"width":40} /-->
 
 				<!-- wp:site-title {"level":0,"style":{"typography":{"fontStyle":"normal","fontWeight":"700"}}} /-->
 			</div>
@@ -27,10 +27,28 @@
 		<!-- wp:column {"style":{"spacing":{"padding":{"top":"1em","right":"1em","bottom":"1em","left":"1em"}}}} -->
 		<div class="wp-block-column" style="padding-top:1em;padding-right:1em;padding-bottom:1em;padding-left:1em">
 			<!-- wp:heading {"level":4} -->
-			<h4>Site links</h4>
+			<h4>Site pages</h4>
 			<!-- /wp:heading -->
 
-			<!-- wp:navigation {"ref":820,"overlayMenu":"never","overlayBackgroundColor":"background","overlayTextColor":"foreground","align":"full","layout":{"type":"flex","justifyContent":"left","orientation":"vertical"}} /-->
+			<!-- wp:paragraph {"fontSize":"default"} -->
+			<p class="has-default-font-size">Home</p>
+			<!-- /wp:paragraph -->
+
+			<!-- wp:paragraph {"fontSize":"default"} -->
+			<p class="has-default-font-size">About us</p>
+			<!-- /wp:paragraph -->
+
+			<!-- wp:paragraph {"fontSize":"default"} -->
+			<p class="has-default-font-size">Shop all</p>
+			<!-- /wp:paragraph -->
+
+			<!-- wp:paragraph {"fontSize":"default"} -->
+			<p class="has-default-font-size">My account</p>
+			<!-- /wp:paragraph -->
+
+			<!-- wp:paragraph {"fontSize":"default"} -->
+			<p class="has-default-font-size">My purchases</p>
+			<!-- /wp:paragraph -->
 		</div>
 		<!-- /wp:column -->
 
@@ -68,8 +86,8 @@
 	<div style="height:40px" aria-hidden="true" class="wp-block-spacer"></div>
 	<!-- /wp:spacer -->
 
-	<!-- wp:group {"align":"wide","style":{"spacing":{"margin":{"top":"0px","bottom":"0px"},"padding":{"top":"0px","right":"0px","bottom":"0px","left":"0px"}}},"backgroundColor":"secondary"} -->
-	<div class="wp-block-group alignwide has-secondary-background-color has-background"
+	<!-- wp:group {"align":"wide","style":{"spacing":{"margin":{"top":"0px","bottom":"0px"},"padding":{"top":"0px","right":"0px","bottom":"0px","left":"0px"}}},"gradient":"vertical-primary-secondary"} -->
+	<div class="wp-block-group alignwide has-vertical-primary-secondary-gradient-background has-background"
 		style="margin-top:0px;margin-bottom:0px;padding-top:0px;padding-right:0px;padding-bottom:0px;padding-left:0px">
 		<!-- wp:spacer {"height":"10px"} -->
 		<div style="height:10px" aria-hidden="true" class="wp-block-spacer"></div>
@@ -79,31 +97,11 @@
 
 	<!-- wp:group {"align":"full","layout":{"type":"flex","allowOrientation":false,"justifyContent":"center"}} -->
 	<div class="wp-block-group alignfull">
-		<!-- wp:group {"layout":{"type":"flex","allowOrientation":false}} -->
-		<div class="wp-block-group">
-			<!-- wp:paragraph {"fontSize":"normal"} -->
-			<p class="has-normal-font-size">Copyright 2022</p>
-			<!-- /wp:paragraph -->
-
-			<!-- wp:site-title {"level":0,"fontSize":"normal"} /-->
-
-			<!-- wp:paragraph {"fontSize":"normal"} -->
-			<p class="has-normal-font-size"><a class="privacy-policy-link"
-					href="http://mm-fse-store.local/privacy-policy/">Privacy Policy</a></p>
-			<!-- /wp:paragraph -->
-		</div>
-		<!-- /wp:group -->
+		<!-- wp:pattern {"slug":"blockette/links-copyright-privacy} /-->
 	</div>
 	<!-- /wp:group -->
 
-	<!-- wp:social-links {"customIconColor":"#ffffff","iconColorValue":"#ffffff","iconBackgroundColor":"primary","iconBackgroundColorValue":"#D1512D","className":"has-icon-color","layout":{"type":"flex","justifyContent":"center"}} -->
-	<ul class="wp-block-social-links has-icon-color has-icon-background-color">
-		<!-- wp:social-link {"url":"https://wordpress.org","service":"wordpress"} /-->
+	<!-- wp:pattern {"slug":"blockette/links-social"} /-->
 
-		<!-- wp:social-link {"url":"#","service":"chain"} /-->
-
-		<!-- wp:social-link {"url":"#","service":"mail"} /-->
-	</ul>
-	<!-- /wp:social-links -->
 </div>
 <!-- /wp:group -->

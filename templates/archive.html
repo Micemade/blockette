@@ -1,39 +1,56 @@
 <!-- wp:template-part {"slug":"header","tagName":"header","className":"site-header is-style-blockette-sticky"} /-->
 
 <!-- wp:group {"tagName":"main","align":"full","style":{"spacing":{"padding":{"top":"calc(var(--wp--custom--v-spacing, 1.25rem) *3)","bottom":"calc(var(--wp--custom--v-spacing, 1.25rem) *2)"}}},"layout":{"inherit":true}} -->
-<main class="wp-block-group alignfull" style="padding-top:calc(var(--wp--custom--v-spacing, 1.25rem) *3);padding-bottom:calc(var(--wp--custom--v-spacing, 1.25rem) *2)">
+<main class="wp-block-group alignfull"
+	style="padding-top:calc(var(--wp--custom--v-spacing, 1.25rem) *3);padding-bottom:calc(var(--wp--custom--v-spacing, 1.25rem) *2)">
+
 	<!-- wp:query-title {"type":"archive","level":2,"className":"is-style-blockette-text-shadow","fontSize":"x-large"} /-->
-	<!-- wp:term-description /-->
-	<!-- wp:spacer {"height":"20px"} -->
-	<div style="height:20px" aria-hidden="true" class="wp-block-spacer"></div>
+
+	<!-- wp:separator {"backgroundColor":"primary","className":"is-style-wide"} -->
+	<hr
+		class="wp-block-separator has-text-color has-primary-color has-alpha-channel-opacity has-primary-background-color has-background is-style-wide" />
+	<!-- /wp:separator -->
+
+	<!-- wp:term-description {"fontSize":"small"} /-->
+
+	<!-- wp:spacer {"height":"var(--wp--custom--v-spacing, 4vw)"} -->
+	<div style="height:var(--wp--custom--v-spacing, 4vw)" aria-hidden="true" class="wp-block-spacer"></div>
 	<!-- /wp:spacer -->
-	<!-- wp:query {"query":{"perPage":5,"pages":0,"offset":0,"postType":"post","categoryIds":[],"tagIds":[],"order":"desc","orderBy":"date","author":"","search":"","exclude":[],"sticky":"","inherit":true},"align":"full","layout":{"inherit":true}} -->
+
+	<!-- wp:query {"queryId":1,"query":{"perPage":5,"pages":0,"offset":0,"postType":"post","order":"desc","orderBy":"date","author":"","search":"","exclude":[],"sticky":"","inherit":true},"displayLayout":{"type":"list"},"align":"full","layout":{"inherit":true}} -->
 	<div class="wp-block-query alignfull">
 		<!-- wp:post-template -->
-		<!-- wp:post-title {"level":3,"isLink":true,"className":"is-style-blockette-text-shadow","fontSize":"x-large"} /-->
-		<!-- wp:group {"layout":{"type":"flex","allowOrientation":false}} -->
-		<div class="wp-block-group">
+		<!-- wp:post-title {"level":3,"isLink":true,"style":{"spacing":{"margin":{"bottom":"0.3em","top":"0.3em"}}},"className":"is-style-default","fontSize":"large"} /-->
+
+		<!-- wp:group {"style":{"spacing":{"blockGap":"0.8em"}},"layout":{"type":"flex","allowOrientation":false},"fontSize":"small"} -->
+		<div class="wp-block-group has-small-font-size">
 			<!-- wp:post-author {"showAvatar":false} /-->
+
 			<!-- wp:post-date /-->
+
 			<!-- wp:post-terms {"term":"category"} /-->
 		</div>
 		<!-- /wp:group -->
-		<!-- wp:separator {"color":"secondary","className":"is-style-wide"} -->
-		<hr class="wp-block-separator has-text-color has-background has-secondary-background-color has-secondary-color is-style-wide" />
+
+		<!-- wp:separator {"opacity":"css","backgroundColor":"secondary","className":"is-style-wide"} -->
+		<hr
+			class="wp-block-separator has-text-color has-secondary-color has-css-opacity has-secondary-background-color has-background is-style-wide" />
 		<!-- /wp:separator -->
+
 		<!-- wp:post-excerpt {"showMoreOnNewLine":false} /-->
-		<!-- wp:spacer {"height":"40px"} -->
-		<div style="height:40px" aria-hidden="true" class="wp-block-spacer"></div>
+
+		<!-- wp:spacer {"height":"4vw"} -->
+		<div style="height:4vw" aria-hidden="true" class="wp-block-spacer"></div>
 		<!-- /wp:spacer -->
 		<!-- /wp:post-template -->
 
 		<!-- wp:query-pagination {"layout":{"type":"flex","justifyContent":"space-between"}} -->
-		<!-- wp:query-pagination-previous {"label":"Previous"} /-->
-		<!-- wp:query-pagination-next {"label":"Next"} /-->
+		<!-- wp:query-pagination-previous {"label":"← Previous","fontSize":"medium"} /-->
+
+		<!-- wp:query-pagination-next {"label":"Next →","fontSize":"medium"} /-->
 		<!-- /wp:query-pagination -->
-
-	</div><!-- /wp:query -->
-
+	</div>
+	<!-- /wp:query -->
 </main>
 <!-- /wp:group -->
 

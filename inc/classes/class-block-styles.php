@@ -55,17 +55,19 @@ class Block_Styles {
 	private function register_block_styles() {
 
 		$block_styles = array(
-			'core/template-part' => array( 
-				'sticky' => __( 'Sticky', 'blockette' ),
+			'core/template-part' => array(
+				'sticky'        => __( 'Sticky', 'blockette' ),
+				'shadow'        => __( 'Shadow', 'blockette' ),
+				'sticky-shadow' => __( 'Sticky shadowed', 'blockette' ),
 			),
-			'core/button'     => array( 
+			'core/button'        => array(
 				'flat-button' => __( 'Flat button', 'blockette' ),
 				'pill-button' => __( 'Pill button', 'blockette' ),
 				'with-shadow' => __( 'With shadow', 'blockette' ),
 			),
-			'core/navigation' => array( 
+			'core/navigation'    => array(
 				'button-style'      => __( 'Button', 'blockette' ),
-				'nav-button-shadow' => __( 'Button shadow', 'blockette' ), 
+				'nav-button-shadow' => __( 'Button shadow', 'blockette' ),
 			),
 			'core/quote'         => array(
 				'inverted' => __( 'Inverted', 'blockette' ),
@@ -87,6 +89,13 @@ class Block_Styles {
 			),
 			'core/heading'       => array(
 				'text-shadow' => __( 'Text shadow', 'blockette' ),
+				'gradient-1'  => __( 'Gradient 1', 'blockette' ),
+				'gradient-2'  => __( 'Gradient 2', 'blockette' ),
+				'gradient-3'  => __( 'Gradient 3', 'blockette' ),
+				'gradient-4'  => __( 'Gradient 4', 'blockette' ),
+			),
+			'core/separator'     => array(
+				'dashed' => __( 'Dashed', 'blockette' ),
 			),
 		);
 
@@ -101,7 +110,6 @@ class Block_Styles {
 				);
 			}
 		}
-
 
 	}
 
