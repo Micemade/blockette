@@ -3,11 +3,12 @@ Theme Name: Blockette
 Author: Micemade
 Author URI: https://micemade.com
 Theme URI: https://micemade.com/blockette
+Description: WordPress Block theme, created for Full Site Editing, adapted to WooCommerce plugin. Features three additional global style variations.
 Tags: site-editor, full-site-editing, editor-style, block-styles, block-patterns, patterns, templates, template-parts
 Text Domain: blockette
 Requires at least: 6.0
 Requires PHP: 7.4
-Tested up to: 6.0
+Tested up to: 6.1
 Version: 1.0.0
 
 License: GNU General Public License v2 or later
@@ -15,10 +16,6 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
 All files, unless otherwise stated, are released under the GNU General Public
 License version 2.0 (http://www.gnu.org/licenses/gpl-2.0.html)
-
-This theme, like WordPress, is licensed under the GPL.
-Use it to make something cool, have fun, and share what you've learned
-with others.
 */
 
 /*
