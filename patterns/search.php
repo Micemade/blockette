@@ -10,8 +10,8 @@
  */
 
 ?>
-<!-- wp:heading {"className":"is-style-blockette-text-shadow","fontSize":"x-large"} -->
-<h2 class="is-style-blockette-text-shadow has-x-large-font-size">
+<!-- wp:heading {"className":"is-style-blockette-text-shadow","fontSize":"big"} -->
+<h2 class="is-style-blockette-text-shadow has-big-font-size">
 	<?php echo esc_html( Blockette\Block_Patterns::search_title() ); ?>
 </h2>
 <!-- /wp:heading -->

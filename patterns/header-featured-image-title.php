@@ -68,17 +68,18 @@
 		</div>
 		<!-- /wp:columns -->
 
-		<!-- wp:spacer {"height":"4vw"} -->
-		<div style="height:4vw" aria-hidden="true" class="wp-block-spacer"></div>
+		<!-- wp:spacer {"height":"var(--wp--custom--v-spacing, 4vw)"} -->
+		<div style="height:var(--wp--custom--v-spacing, 4vw)" aria-hidden="true" class="wp-block-spacer"></div>
 		<!-- /wp:spacer -->
 
 		<!-- wp:post-title {"textAlign":"center","style":{"spacing":{"margin":{"top":"2vw","right":"0vw","bottom":"0vw","left":"0vw"}}},"textColor":"white","fontSize":"big"} /-->
 
 		<!-- wp:post-date {"textAlign":"center","textColor":"background","fontSize":"small"} /-->
 
-		<!-- wp:spacer {"height":"4vw"} -->
-		<div style="height:4vw" aria-hidden="true" class="wp-block-spacer"></div>
+		<!-- wp:spacer {"height":"var(--wp--custom--v-spacing, 4vw)"} -->
+		<div style="height:var(--wp--custom--v-spacing, 4vw)" aria-hidden="true" class="wp-block-spacer"></div>
 		<!-- /wp:spacer -->
+
 	</div>
 </div>
 <!-- /wp:cover -->

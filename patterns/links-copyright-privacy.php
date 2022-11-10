@@ -19,8 +19,11 @@
 
 	<!-- wp:site-title {"level":0,"fontSize":"normal"} /-->
 
-	<!-- wp:paragraph {"fontSize":"normal"} -->
-	<p class="has-normal-font-size"><?php echo wp_kses_post( Blockette\Block_Patterns::privacy() ); ?></p>
-	<!-- /wp:paragraph -->
+	<?php if ( get_the_privacy_policy_link() ) { ?>
+		<!-- wp:paragraph {"fontSize":"normal"} -->
+		<p class="has-normal-font-size"><?php echo wp_kses_post( Blockette\Block_Patterns::privacy() ); ?></p>
+		<!-- /wp:paragraph -->
+	<?php } ?>
+
 </div>
 <!-- /wp:group -->

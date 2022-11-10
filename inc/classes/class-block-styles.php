@@ -44,7 +44,7 @@ class Block_Styles {
 	 */
 	public function __construct() {
 		$this->register_block_styles();
-		add_action( 'enqueue_block_editor_assets', array( $this, 'unregister_block_styles' ) );
+		add_action( 'enqueue_block_editor_assets', array( $this, 'block_styles' ) );
 	}
 
 	/**
@@ -114,14 +114,14 @@ class Block_Styles {
 	}
 
 	/**
-	 * Unregister block styles via JS.
+	 * Block styles in JS.
 	 *
 	 * @return void
 	 */
-	public function unregister_block_styles() {
+	public function block_styles() {
 		wp_enqueue_script(
-			'blockette-unregister-block-styles',
-			get_stylesheet_directory_uri() . '/assets/js/unregister-block-styles.js',
+			'blockette-block-styles',
+			get_stylesheet_directory_uri() . '/assets/js/block-styles.js',
 			array( 'wp-blocks', 'wp-dom-ready', 'wp-edit-post' ),
 			BLOCKETTE_VERSION,
 			true

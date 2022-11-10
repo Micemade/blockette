@@ -106,8 +106,9 @@ $image = get_theme_file_uri( 'assets/images/pexels-ali-pazani-2787351.webp' );
 	</div>
 	<!-- /wp:columns -->
 
-	<!-- wp:spacer {"height":"4vw"} -->
-	<div style="height:4vw" aria-hidden="true" class="wp-block-spacer"></div>
+	<!-- wp:spacer {"height":"var(--wp--custom--v-spacing, 4vw)"} -->
+	<div style="height:var(--wp--custom--v-spacing, 4vw)" aria-hidden="true" class="wp-block-spacer"></div>
 	<!-- /wp:spacer -->
+
 </div>
 <!-- /wp:group -->

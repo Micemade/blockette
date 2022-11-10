@@ -1,12 +1,6 @@
+/* Button properties not available (yet) in theme.json */
 .wp-block-button__link {
-	box-shadow: var(--wp--custom--shadow-flat);
 	transition: background-color .2s linear;
-}
-
-.wp-block-button__link:focus,
-.wp-block-button__link:hover {
-	color: var(--wp--preset--color--foreground);
-	background-color: var(--wp--preset--color--secondary);
 }
 
 .wp-block-button__link:active {
@@ -14,12 +8,7 @@
 	box-shadow: none;
 }
 
-.wp-block-button__link:visited {
-	background-color: initial;
-	box-shadow: var(--wp--custom--shadow-flat);
-}
-
-/* Match the editor */
+/* Match the editor properties */
 .wp-block-buttons > .wp-block-button {
 	margin-top: .5em;
 }

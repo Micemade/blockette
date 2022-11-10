@@ -5,16 +5,19 @@
  */
 var animElements = document.getElementsByClassName('blockette-animate');
 // Trigger animation when element on screen.
-function startAnimation(element) {
+const startAnimation = (element) => {
 	if (element.getBoundingClientRect().top > 0 && element.getBoundingClientRect().top <= (window.innerHeight * 0.8)) {
 		element.classList.add('blockette-animate-init');
 	}
 }
 for (let element of animElements) {
-	window.addEventListener('load', function () {
+	window.addEventListener('load', () => {
 		startAnimation(element);
 	});
-	window.addEventListener('scroll', function () {
+	window.addEventListener('scroll', () => {
+		startAnimation(element);
+	});
+	window.addEventListener('resize', () => {
 		startAnimation(element);
 	});
 }
@@ -22,7 +25,7 @@ for (let element of animElements) {
 /*
  * Fix position when submenu goes off screen.
  */
-function submenuPosition() {
+const submenuPosition = () => {
 	// Find all menu items containing sub menus.
 	var subMenuHolders = document.getElementsByClassName('has-child');
 	// If no menu items with submenus, abort.
@@ -34,21 +37,26 @@ function submenuPosition() {
 		let subMenu = subMenuHolder.querySelector('.wp-block-navigation__submenu-container');
 		if (subMenu) {
 			// On container mouseover check and fix submenu position.
-			subMenuHolder.addEventListener('mouseover', function () {
+			subMenuHolder.addEventListener('mouseover', () => {
 				let rect = subMenu.getBoundingClientRect(),
-					subMenuRight = rect.x + subMenu.offsetWidth;
+					subMenuRight = rect.x + subMenu.offsetWidth,
+					subMenuBottom = rect.y + subMenu.offsetHeight;
 				if (subMenuRight >= window.innerWidth) {
 					subMenu.style.left = 'auto';
 					subMenu.style.right = '-1px';
+				}
+				if (subMenuBottom >= window.innerHeight) {
+					subMenu.style.top = 'auto';
+					subMenu.style.bottom = '100%';
 				}
 			});
 		}
 	}
 }
-window.addEventListener('load', function () {
+window.addEventListener('load', () => {
 	submenuPosition();
 });
-window.addEventListener('resize', function () {
+window.addEventListener('resize', () => {
 	submenuPosition();
 });
 
@@ -56,11 +64,11 @@ window.addEventListener('resize', function () {
 /*
  * Modal menu functionalities.
  */
-function menuModals() {
+const menuModals = () => {
 	const menuOpeners = document.getElementsByClassName('wp-block-navigation__responsive-container-open');
 	for (let menuOpener of menuOpeners) {
 
-		menuOpener.addEventListener('click', function () {
+		menuOpener.addEventListener('click', () => {
 
 			let menuParent = menuOpener.parentNode,
 				menuModals = menuParent.getElementsByClassName('wp-block-navigation__responsive-container'),
@@ -82,7 +90,7 @@ function menuModals() {
 				subMenuLink[0].appendChild(arrowElm);
 
 				// Add click event to every arrow.
-				arrowElm.addEventListener('click', function (event) {
+				arrowElm.addEventListener('click', (event) => {
 					subMenuContainer[0].classList.toggle('active');
 					event.target.classList.toggle('active');
 					event.preventDefault();
@@ -90,14 +98,14 @@ function menuModals() {
 				});
 
 			}
-			menuCloser[0].addEventListener('click', function () {
+			menuCloser[0].addEventListener('click', () => {
 				removeReset(menuModals[0]);
 			});
 
 		});
 	}
 }
-function removeReset(modal) {
+const removeReset = (modal) => {
 	// Remove all added subarrows.
 	let removeElms = modal.querySelectorAll('.subarrow');
 	if (removeElms.length) {
@@ -114,6 +122,7 @@ function removeReset(modal) {
 	}
 }
 
-window.addEventListener('load', function () {
+window.addEventListener('load', () => {
 	menuModals();
 });
+

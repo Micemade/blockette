@@ -25,8 +25,8 @@ $image_02 = get_theme_file_uri( 'assets/images/model-jeans-fashion-633680-pxhere
 	</div>
 	<!-- /wp:group -->
 
-	<!-- wp:spacer {"height":"4vw"} -->
-	<div style="height:4vw" aria-hidden="true" class="wp-block-spacer"></div>
+	<!-- wp:spacer {"height":"var(--wp--custom--v-spacing, 4vw)"} -->
+	<div style="height:var(--wp--custom--v-spacing, 4vw)" aria-hidden="true" class="wp-block-spacer"></div>
 	<!-- /wp:spacer -->
 
 	<!-- wp:group {"align":"wide"} -->
@@ -38,8 +38,8 @@ $image_02 = get_theme_file_uri( 'assets/images/model-jeans-fashion-633680-pxhere
 		</p>
 		<!-- /wp:paragraph -->
 
-		<!-- wp:heading {"textColor":"foreground","className":"blockette-animate blockette-move-down","fontSize":"x-large"} -->
-		<h2 class="blockette-animate blockette-move-down has-foreground-color has-text-color has-x-large-font-size"> →
+		<!-- wp:heading {"textColor":"foreground","className":"blockette-animate blockette-move-down","fontSize":"big"} -->
+		<h2 class="blockette-animate blockette-move-down has-foreground-color has-text-color has-big-font-size"> →
 			<strong><?php echo esc_html_x( 'Last season', 'Sample text for the heading', 'blockette' ); ?> <mark class="has-inline-color has-primary-color"><?php echo esc_html_x( 'OUTLET', 'Sample text for the heading', 'blockette' ); ?></mark></strong></h2>
 		<!-- /wp:heading -->
 	</div>
@@ -145,8 +145,8 @@ $image_02 = get_theme_file_uri( 'assets/images/model-jeans-fashion-633680-pxhere
 	</div>
 	<!-- /wp:columns -->
 
-	<!-- wp:spacer {"height":"4vw"} -->
-	<div style="height:4vw" aria-hidden="true" class="wp-block-spacer"></div>
+	<!-- wp:spacer {"height":"var(--wp--custom--v-spacing, 4vw)"} -->
+	<div style="height:var(--wp--custom--v-spacing, 4vw)" aria-hidden="true" class="wp-block-spacer"></div>
 	<!-- /wp:spacer -->
 
 </div>

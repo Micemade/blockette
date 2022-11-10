@@ -1,17 +1,17 @@
 <!-- wp:template-part {"slug":"header","tagName":"header","className":"site-header is-style-blockette-sticky"} /-->
 
-<!-- wp:group {"tagName":"main","align":"full","style":{"spacing":{"padding":{"top":"calc(var(--wp--custom--v-spacing, 1.25rem) *3)","bottom":"calc(var(--wp--custom--v-spacing, 1.25rem) *2)"}}},"layout":{"inherit":true}} -->
+<!-- wp:group {"tagName":"main","align":"full","style":{"spacing":{"padding":{"top":"calc(var(--wp--custom--v-spacing, 1.25rem) *3)","bottom":"calc(var(--wp--custom--v-spacing, 1.25rem) *2)"}}},"layout":{"inherit":true,"type":"constrained"}} -->
 <main class="wp-block-group alignfull"
 	style="padding-top:calc(var(--wp--custom--v-spacing, 1.25rem) *3);padding-bottom:calc(var(--wp--custom--v-spacing, 1.25rem) *2)">
 
-	<!-- wp:post-title {"textAlign":"center"} /-->
+	<!-- wp:post-title {"textAlign":"center","className":"is-style-blockette-text-shadow","fontSize":"big"} /-->
 
 	<!-- wp:spacer {"height":"var(--wp--custom--v-spacing, 4vw)"} -->
 	<div style="height:var(--wp--custom--v-spacing, 4vw)" aria-hidden="true" class="wp-block-spacer"></div>
 	<!-- /wp:spacer -->
 
 	<!-- wp:woocommerce/checkout {"align":"wide"} -->
-	<div class="wp-block-woocommerce-checkout alignwide wc-block-checkout">
+	<div class="wp-block-woocommerce-checkout alignwide wc-block-checkout is-loading">
 		<!-- wp:woocommerce/checkout-fields-block -->
 		<div class="wp-block-woocommerce-checkout-fields-block">
 			<!-- wp:woocommerce/checkout-express-payment-block -->
@@ -55,7 +55,35 @@
 		<!-- wp:woocommerce/checkout-totals-block -->
 		<div class="wp-block-woocommerce-checkout-totals-block">
 			<!-- wp:woocommerce/checkout-order-summary-block -->
-			<div class="wp-block-woocommerce-checkout-order-summary-block"></div>
+			<div class="wp-block-woocommerce-checkout-order-summary-block">
+				<!-- wp:woocommerce/checkout-order-summary-cart-items-block -->
+				<div class="wp-block-woocommerce-checkout-order-summary-cart-items-block"></div>
+				<!-- /wp:woocommerce/checkout-order-summary-cart-items-block -->
+
+				<!-- wp:woocommerce/checkout-order-summary-subtotal-block -->
+				<div class="wp-block-woocommerce-checkout-order-summary-subtotal-block"></div>
+				<!-- /wp:woocommerce/checkout-order-summary-subtotal-block -->
+
+				<!-- wp:woocommerce/checkout-order-summary-fee-block -->
+				<div class="wp-block-woocommerce-checkout-order-summary-fee-block"></div>
+				<!-- /wp:woocommerce/checkout-order-summary-fee-block -->
+
+				<!-- wp:woocommerce/checkout-order-summary-discount-block -->
+				<div class="wp-block-woocommerce-checkout-order-summary-discount-block"></div>
+				<!-- /wp:woocommerce/checkout-order-summary-discount-block -->
+
+				<!-- wp:woocommerce/checkout-order-summary-coupon-form-block -->
+				<div class="wp-block-woocommerce-checkout-order-summary-coupon-form-block"></div>
+				<!-- /wp:woocommerce/checkout-order-summary-coupon-form-block -->
+
+				<!-- wp:woocommerce/checkout-order-summary-shipping-block -->
+				<div class="wp-block-woocommerce-checkout-order-summary-shipping-block"></div>
+				<!-- /wp:woocommerce/checkout-order-summary-shipping-block -->
+
+				<!-- wp:woocommerce/checkout-order-summary-taxes-block -->
+				<div class="wp-block-woocommerce-checkout-order-summary-taxes-block"></div>
+				<!-- /wp:woocommerce/checkout-order-summary-taxes-block -->
+			</div>
 			<!-- /wp:woocommerce/checkout-order-summary-block -->
 		</div>
 		<!-- /wp:woocommerce/checkout-totals-block -->
@@ -65,7 +93,6 @@
 	<!-- wp:spacer {"height":"var(--wp--custom--v-spacing, 4vw)"} -->
 	<div style="height:var(--wp--custom--v-spacing, 4vw)" aria-hidden="true" class="wp-block-spacer"></div>
 	<!-- /wp:spacer -->
-
 </main>
 <!-- /wp:group -->
 

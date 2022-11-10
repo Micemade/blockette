@@ -14,8 +14,8 @@
 <!-- wp:group {"tagName":"main","align":"full","style":{"spacing":{"padding":{"top":"calc(var(--wp--custom--v-spacing, 1.25rem) *3)","bottom":"calc(var(--wp--custom--v-spacing, 1.25rem) *2)"}}},"layout":{"inherit":true,"type":"constrained"}} -->
 <main class="wp-block-group alignfull" style="padding-top:calc(var(--wp--custom--v-spacing, 1.25rem) *3);padding-bottom:calc(var(--wp--custom--v-spacing, 1.25rem) *2)">
 
-	<!-- wp:heading {"textAlign":"center","className":"is-style-blockette-text-shadow","fontSize":"x-large"} -->
-	<h2 class="has-text-align-center is-style-blockette-text-shadow has-x-large-font-size">
+	<!-- wp:heading {"textAlign":"center","className":"is-style-blockette-text-shadow","fontSize":"big"} -->
+	<h2 class="has-text-align-center is-style-blockette-text-shadow has-big-font-size">
 		<?php echo esc_html_x( 'Page not found', 'Sample text for the heading', 'blockette' ); ?>
 	</h2>
 	<!-- /wp:heading -->

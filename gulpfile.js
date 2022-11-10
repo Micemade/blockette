@@ -2,9 +2,11 @@ const gulp = require('gulp'),
 	clean = require('gulp-clean'),
 	concatCss = require('gulp-concat-css'),
 	rename = require('gulp-rename'),
-	cleanCSS = require('gulp-clean-css');
+	uglifycss = require('gulp-uglifycss'),
+	wpPot = require("gulp-wp-pot"),
+	sort = require("gulp-sort");
 
-gulp.task('watch', function () {
+gulp.task('watch', () => {
 	gulp.watch(['assets/css/**/*.css']).on(
 		'change',
 		gulp.series(
@@ -16,7 +18,7 @@ gulp.task('watch', function () {
 	);
 });
 
-gulp.task('clean-shared', function () {
+gulp.task('clean-shared', () => {
 	return gulp.src('assets/css/style-shared.min.css', {
 		read: false,
 		allowEmpty: true,
@@ -24,7 +26,7 @@ gulp.task('clean-shared', function () {
 		.pipe(clean());
 });
 
-gulp.task('clean-blocks', function () {
+gulp.task('clean-blocks', () => {
 	return gulp.src('assets/css/blocks/*.min.css', {
 		read: false,
 		allowEmpty: true,
@@ -32,18 +34,36 @@ gulp.task('clean-blocks', function () {
 		.pipe(clean());
 });
 
-gulp.task('minify-shared', function () {
+gulp.task('minify-shared', () => {
 	return gulp.src('assets/css/style-shared/*.css')
 		.pipe(concatCss('style-shared.min.css'))
-		.pipe(cleanCSS())
+		.pipe(uglifycss())
 		.pipe(gulp.dest('assets/css/'));
 });
 
-gulp.task('minify-blocks', function () {
+gulp.task('minify-blocks', () => {
 	return gulp.src('assets/css/blocks/*.css')
-		.pipe(cleanCSS())
+		.pipe(uglifycss())
 		.pipe(rename({ suffix: '.min' }))
 		.pipe(gulp.dest('assets/css/blocks'));
+});
+
+gulp.task('translate', () => {
+	return gulp
+		.src("./**/*.php")
+		.pipe(sort())
+		.pipe(
+			wpPot({
+				domain: "blockette",
+				package: "Blockette",
+				bugReport: "https://micemade.com/contact/",
+				lastTranslator: "Alen Sirola <alen@micemade.com>",
+				team: "Micemade <alen@micemade.com>",
+			})
+		)
+		.pipe(
+			gulp.dest("./languages/blockette.pot")
+		)
 });
 
 gulp.task(

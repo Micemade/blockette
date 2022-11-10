@@ -16,8 +16,9 @@ $image_01 = get_theme_file_uri( 'assets/images/pexels-ali-pazani-2681751.webp' )
 <!-- wp:group {"align":"wide","style":{"spacing":{"padding":{"top":"0px","right":"0px","bottom":"0px","left":"0px"}}},"gradient":"vertical-background-secondary"} -->
 <div class="wp-block-group alignwide has-vertical-background-secondary-gradient-background has-background"
 	style="padding-top:0px;padding-right:0px;padding-bottom:0px;padding-left:0px">
-	<!-- wp:spacer {"height":"2vw"} -->
-	<div style="height:2vw" aria-hidden="true" class="wp-block-spacer"></div>
+	
+	<!-- wp:spacer {"height":"var(--wp--custom--v-spacing, 4vw)"} -->
+	<div style="height:var(--wp--custom--v-spacing, 4vw)" aria-hidden="true" class="wp-block-spacer"></div>
 	<!-- /wp:spacer -->
 
 	<!-- wp:columns {"align":"wide"} -->

@@ -1,4 +1,4 @@
-/* These are inner elements of blocks that can't be targetted using theme.json*/
+/* Inner blocks elements that can't be targetted using theme.json */
 
 /* Override the default line height which is too small. */
 .wp-block-latest-comments__comment {

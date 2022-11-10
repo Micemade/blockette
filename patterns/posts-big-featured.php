@@ -20,8 +20,8 @@
 
 	<!-- wp:group {"align":"wide","layout":{"inherit":true}} -->
 	<div class="wp-block-group alignwide">
-		<!-- wp:heading {"textAlign":"center","align":"wide","fontSize":"x-large"} -->
-		<h2 class="alignwide has-text-align-center has-x-large-font-size">
+		<!-- wp:heading {"textAlign":"center","align":"wide","fontSize":"big"} -->
+		<h2 class="alignwide has-text-align-center has-big-font-size">
 			<?php echo esc_html_x( 'Posts with big featured image', 'Sample text for the heading', 'blockette' ); ?>
 		</h2>
 		<!-- /wp:heading -->
@@ -67,8 +67,9 @@
 	</div>
 	<!-- /wp:group -->
 
-	<!-- wp:spacer {"height":"4vw"} -->
-	<div style="height:4vw" aria-hidden="true" class="wp-block-spacer"></div>
+	<!-- wp:spacer {"height":"var(--wp--custom--v-spacing, 4vw)"} -->
+	<div style="height:var(--wp--custom--v-spacing, 4vw)" aria-hidden="true" class="wp-block-spacer"></div>
 	<!-- /wp:spacer -->
+
 </div>
 <!-- /wp:group -->

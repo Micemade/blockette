@@ -2,7 +2,6 @@
 	font-size: var(--wp--preset--font-size--small);
 	font-family: var(--wp--preset--font-family--system);
 	line-height: 1.7;
-	border: 2px solid var(--wp--custom--button-border-color);
 	padding: var(--wp--custom--input-padding);
 	border-radius: var(--wp--custom--global-border-radius);
 	background: var(--wp--preset--color--secondary);
@@ -18,7 +17,6 @@
 }
 
 .wp-block-file .wp-block-file__button:active {
-	border-color: var(--wp--custom--button-border-color);
 	color: var(--wp--preset--color--foreground);
 	filter: brightness(93%) !important;
 	margin-top: 1px;
@@ -27,7 +25,6 @@
 
 .wp-block-file .wp-block-file__button:visited {
 	background-color: initial;
-	border-color: var(--wp--custom--button-border-color);
 	color: var(--wp--preset--color--foreground);
 	box-shadow: var(--wp--custom--shadow-flat);
 }

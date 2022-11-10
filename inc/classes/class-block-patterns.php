@@ -114,10 +114,7 @@ class Block_Patterns {
 	 * @return string|boolean Link to the privacy policy page, if one is published.
 	 */
 	public static function privacy() {
-		$return = false;
-		if ( get_the_privacy_policy_link() ) {
-			$return =  get_the_privacy_policy_link();
-		}
+		$return = get_the_privacy_policy_link() ? get_the_privacy_policy_link() : false;
 		return $return;
 	}
 

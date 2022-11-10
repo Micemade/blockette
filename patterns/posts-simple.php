@@ -27,8 +27,8 @@
 	</div>
 	<!-- /wp:group -->
 
-	<!-- wp:spacer {"height":"4vw"} -->
-	<div style="height:4vw" aria-hidden="true" class="wp-block-spacer"></div>
+	<!-- wp:spacer {"height":"var(--wp--custom--v-spacing, 4vw)"} -->
+	<div style="height:var(--wp--custom--v-spacing, 4vw)" aria-hidden="true" class="wp-block-spacer"></div>
 	<!-- /wp:spacer -->
 
 	<!-- wp:group {"align":"wide","layout":{"inherit":true,"type":"constrained"}} -->
@@ -72,8 +72,9 @@
 	</div>
 	<!-- /wp:query -->
 
-	<!-- wp:spacer {"height":"4vw"} -->
-	<div style="height:4vw" aria-hidden="true" class="wp-block-spacer"></div>
+	<!-- wp:spacer {"height":"var(--wp--custom--v-spacing, 4vw)"} -->
+	<div style="height:var(--wp--custom--v-spacing, 4vw)" aria-hidden="true" class="wp-block-spacer"></div>
 	<!-- /wp:spacer -->
+
 </div>
 <!-- /wp:group -->

@@ -58,9 +58,10 @@ $image = get_theme_file_uri( 'assets/images/pexels-ivan-oboleninov-2916814.jpg' 
 		</div>
 		<!-- /wp:buttons -->
 
-		<!-- wp:spacer {"height":"2vw"} -->
-		<div style="height:2vw" aria-hidden="true" class="wp-block-spacer"></div>
+		<!-- wp:spacer {"height":"var(--wp--custom--v-spacing, 4vw)"} -->
+		<div style="height:var(--wp--custom--v-spacing, 4vw)" aria-hidden="true" class="wp-block-spacer"></div>
 		<!-- /wp:spacer -->
+
 	</div>
 </div>
 <!-- /wp:cover -->
