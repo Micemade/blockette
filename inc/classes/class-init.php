@@ -66,10 +66,32 @@ class Init {
 
 		// Load editor styles.
 		add_action( 'admin_init', array( $this, 'editor_styles' ) );
-		add_action( 'admin_bar_menu', array( $this, 'admin_toolbar_links' ), 100 );
 
 		// Additional WP filters.
 		$this->filters();
+
+		// Check if content is built with blocks, or classic editor.
+		add_action( 'the_content', array( $this, 'maybe_classic_editor' ), 1 );
+
+	}
+
+	/**
+	 * Check if content uses blocks or created with classic editor.
+	 *
+	 * @param string $content - the post content.
+	 *
+	 * @return $content
+	 */
+	public function maybe_classic_editor( $content ) {
+		if ( ! has_blocks() ) {
+			add_filter(
+				'body_class',
+				function ( $classes ) {
+					return array_merge( $classes, array( 'maybe-classic-editor' ) );
+				}
+			);
+		}
+		return $content;
 	}
 
 	/**
@@ -252,67 +274,6 @@ class Init {
 	 */
 	public function editor_styles() {
 		wp_add_inline_style( 'wp-block-library', $this->load_font_styles() );
-	}
-
-	/**
-	 * Admin toolbar links
-	 *
-	 * @param object $admin_bar object to add menu links (site editor, template and template parts editor).
-	 *
-	 * @return void
-	 */
-	public function admin_toolbar_links( $admin_bar ) {
-		$admin_bar->add_menu(
-			array(
-				'id'    => 'blockette-admin-bar',
-				'title' => 'Blockette theme',
-				'href'  => '#',
-				'meta'  => array(
-					'title'  => __( 'Blockette site editor', 'blockette' ),
-					'target' => '_self',
-					'class'  => 'blockette-theme-admin',
-				),
-			)
-		);
-		$admin_bar->add_menu(
-			array(
-				'id'     => 'blockette-site-editor',
-				'parent' => 'blockette-admin-bar',
-				'title'  => 'Site editor',
-				'href'   => admin_url( 'site-editor.php' ),
-				'meta'   => array(
-					'title'  => __( 'Site editor', 'blockette' ),
-					'target' => '_self',
-					'class'  => 'blockette-admin-link-editor',
-				),
-			)
-		);
-		$admin_bar->add_menu(
-			array(
-				'id'     => 'templates',
-				'parent' => 'blockette-admin-bar',
-				'title'  => __( 'Templates', 'blockette' ),
-				'href'   => admin_url( 'site-editor.php?postType=wp_template' ),
-				'meta'   => array(
-					'title'  => __( 'Templates', 'blockette' ),
-					'target' => '_self',
-					'class'  => 'blockette-admin-link-templates',
-				),
-			)
-		);
-		$admin_bar->add_menu(
-			array(
-				'id'     => 'template-parts',
-				'parent' => 'blockette-admin-bar',
-				'title'  => __( 'Template parts', 'blockette' ),
-				'href'   => admin_url( 'site-editor.php?postType=wp_template_part' ),
-				'meta'   => array(
-					'title'  => __( 'Template parts', 'blockette' ),
-					'target' => '_self',
-					'class'  => 'blockette-admin-link-template-parts',
-				),
-			)
-		);
 	}
 
 	/**

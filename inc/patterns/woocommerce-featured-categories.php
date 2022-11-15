@@ -7,9 +7,9 @@
  */
 
 // Stock product category images.
-$cat_image_01 = get_theme_file_uri( 'assets/images/pexels-ali-pazani-2787341.webp' );
-$cat_image_02 = get_theme_file_uri( 'assets/images/pexels-ali-pazani-2787351.webp' );
-$cat_image_03 = get_theme_file_uri( 'assets/images/pexels-ali-pazani-3093939.webp' );
+$cat_image_01 = get_theme_file_uri( 'assets/images/969555-pxhere.com.jpg' );
+$cat_image_02 = get_theme_file_uri( 'assets/images/628707-pxhere.com.jpg' );
+$cat_image_03 = get_theme_file_uri( 'assets/images/804917-pxhere.com.jpg' );
 
 $prod_cats = array();
 // Get WooCommerce product category term IDs.
@@ -53,7 +53,7 @@ return array(
 
 	<!-- wp:heading {"textAlign":"left","style":{"typography":{"fontStyle":"normal"}},"className":"blockette-animate blockette-move-down blockette-delay-1"} -->
 	<h2 class="has-text-align-left blockette-animate blockette-move-down blockette-delay-1" style="font-style:normal">
-		<mark style="background-color:rgba(0, 0, 0, 0)" class="has-inline-color has-secondary-color"> → </mark>' . esc_html_x( 'Featured product categories', 'Sample text for the heading', 'blockette' ) . '
+		<mark style="background-color:rgba(0, 0, 0, 0)" class="has-inline-color has-primary-color"> → </mark>' . esc_html_x( 'Featured product categories', 'Sample text for the heading', 'blockette' ) . '
 	</h2>
 	<!-- /wp:heading -->
 
@@ -141,8 +141,8 @@ return array(
 	<!-- wp:group {"align":"full","style":{"spacing":{"padding":{"top":"0px","right":"0px","bottom":"0px","left":"0px"},"blockGap":"0px","margin":{"top":"0px","bottom":"0px"}}},"gradient":"vertical-primary-secondary"} -->
 	<div class="wp-block-group alignfull has-vertical-primary-secondary-gradient-background has-background"
 		style="margin-top:0px;margin-bottom:0px;padding-top:0px;padding-right:0px;padding-bottom:0px;padding-left:0px">
-		<!-- wp:spacer {"height":"3vw"} -->
-		<div style="height:3vw" aria-hidden="true" class="wp-block-spacer"></div>
+		<!-- wp:spacer {"height":"5px"} -->
+		<div style="height:5px" aria-hidden="true" class="wp-block-spacer"></div>
 		<!-- /wp:spacer -->
 	</div>
 	<!-- /wp:group -->

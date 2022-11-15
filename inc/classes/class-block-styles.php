@@ -56,14 +56,14 @@ class Block_Styles {
 
 		$block_styles = array(
 			'core/template-part' => array(
-				'sticky'        => __( 'Sticky', 'blockette' ),
-				'shadow'        => __( 'Shadow', 'blockette' ),
-				'sticky-shadow' => __( 'Sticky shadowed', 'blockette' ),
+				'no-shadow'        => __( 'No shadow', 'blockette' ),
+				'sticky'           => __( 'Sticky', 'blockette' ),
+				'sticky-no-shadow' => __( 'Sticky, no shadow', 'blockette' ),
 			),
 			'core/button'        => array(
 				'flat-button' => __( 'Flat button', 'blockette' ),
 				'pill-button' => __( 'Pill button', 'blockette' ),
-				'with-shadow' => __( 'With shadow', 'blockette' ),
+				'soft-shadow' => __( 'Soft shadow', 'blockette' ),
 			),
 			'core/navigation'    => array(
 				'button-style'      => __( 'Button', 'blockette' ),
@@ -85,6 +85,9 @@ class Block_Styles {
 				'text-shadow' => __( 'Text shadow', 'blockette' ),
 			),
 			'core/post-title'    => array(
+				'text-shadow' => __( 'Text shadow', 'blockette' ),
+			),
+			'core/query-title'   => array(
 				'text-shadow' => __( 'Text shadow', 'blockette' ),
 			),
 			'core/heading'       => array(

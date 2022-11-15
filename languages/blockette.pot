@@ -94,12 +94,12 @@ msgstr ""
 
 #: patterns/hero-fashion.php:25
 msgctxt "Sample text for the heading"
-msgid "Fashion Statements and Apparel"
+msgid "Blockette Store for Apparel"
 msgstr ""
 
 #: patterns/hero-fashion.php:31
 msgctxt "Sample text for the section"
-msgid "Browse our Catalog for the Best Products"
+msgid "Browse our store for newest collection"
 msgstr ""
 
 #: patterns/hero-fashion.php:44
@@ -164,7 +164,7 @@ msgstr ""
 
 #: patterns/section-discount.php:59
 msgctxt "Sample text for the paragraph"
-msgid "See discounted dresses"
+msgid "Beauty products"
 msgstr ""
 
 #: patterns/section-discount.php:75
@@ -179,7 +179,7 @@ msgstr ""
 
 #: patterns/section-discount.php:87
 msgctxt "Sample text for the paragraph"
-msgid "See beauty products"
+msgid "Beauty products"
 msgstr ""
 
 #: patterns/section-doutone-cta.php:27

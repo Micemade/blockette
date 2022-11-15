@@ -10,7 +10,7 @@
  * @since 1.0.0
  */
 
-$image = get_theme_file_uri( 'assets/images/pexels-andrea-piacquadio-3769148.webp' );
+$image = get_theme_file_uri( 'assets/images/510074-pxhere.com.jpg' );
 ?>
 
 <!-- wp:group {"align":"full","style":{"spacing":{"padding":{"top":"0px","right":"0px","bottom":"0px","left":"0px"},"blockGap":"0px","margin":{"top":"0px","bottom":"0px"}}}} -->

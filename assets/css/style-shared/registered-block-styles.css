@@ -3,9 +3,9 @@
  * See inc/register-block-styles.php.
  */
 
-.is-style-blockette-shadow,
-.is-style-blockette-sticky-shadow {
-	box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+.is-style-blockette-no-shadow,
+.is-style-blockette-sticky-no-shadow {
+	box-shadow: none;
 }
 
 /* Flat button */
@@ -30,10 +30,10 @@
 }
 
 /* Button with shadow */
-.is-style-blockette-with-shadow .wp-block-button__link,
-.is-style-blockette-with-shadow .wp-block-button__link:hover,
-.is-style-blockette-with-shadow .wp-block-button__link:focus,
-.is-style-blockette-with-shadow .wp-block-button__link:visited {
+.is-style-blockette-soft-shadow .wp-block-button__link,
+.is-style-blockette-soft-shadow .wp-block-button__link:hover,
+.is-style-blockette-soft-shadow .wp-block-button__link:focus,
+.is-style-blockette-soft-shadow .wp-block-button__link:visited {
 	box-shadow: var(--wp--custom--shadow-soft);
 }
 
@@ -48,7 +48,7 @@
 	border-radius: var(--wp--custom--global-border-radius);
 	background: var(--wp--preset--color--secondary);
 	color: var(--wp--preset--color--foreground);
-	box-shadow: var(--wp--custom--shadow-flat);
+	box-shadow: var(--wp--custom--shadow-button-input);
 }
 
 .is-style-blockette-navigation-button button.wp-block-navigation__responsive-container-close:hover,
@@ -57,7 +57,7 @@
 .is-style-blockette-navigation-button button.wp-block-navigation__responsive-container-open:focus {
 	color: var(--wp--preset--color--foreground);
 	filter: brightness(94%) !important;
-	box-shadow: var(--wp--custom--shadow-flat);
+	box-shadow: var(--wp--custom--shadow-button-input);
 }
 
 .is-style-blockette-navigation-button button.wp-block-navigation__responsive-container-close:active,
@@ -72,7 +72,7 @@
 .is-style-blockette-navigation-button button.wp-block-navigation__responsive-container-open:visited {
 	background-color: initial;
 	color: var(--wp--preset--color--foreground);
-	box-shadow: var(--wp--custom--shadow-flat);
+	box-shadow: var(--wp--custom--shadow-button-input);
 }
 
 /* Navigation menu button with shadow */
@@ -94,7 +94,7 @@
 .is-style-blockette-nav-button-shadow button.wp-block-navigation__responsive-container-open:focus {
 	color: var(--wp--preset--color--foreground);
 	filter: brightness(94%) !important;
-	box-shadow: var(--wp--custom--shadow-flat);
+	box-shadow: var(--wp--custom--shadow-button-input);
 }
 
 .is-style-blockette-nav-button-shadow button.wp-block-navigation__responsive-container-close:active,
@@ -109,7 +109,7 @@
 .is-style-blockette-nav-button-shadow button.wp-block-navigation__responsive-container-open:visited {
 	background-color: initial;
 	color: var(--wp--preset--color--foreground);
-	box-shadow: var(--wp--custom--shadow-flat);
+	box-shadow: var(--wp--custom--shadow-button-input);
 }
 
 /* Text shadow */

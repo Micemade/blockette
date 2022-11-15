@@ -30,6 +30,9 @@ screenshot.png
 == Changelog ==
 1.0.0 Initial release
 
+== Copyright ==
+Blockette WordPress Theme, (C) 2022-2023 Micemade.com
+
 == Licence ==
 Blockette is distributed under the terms of the GNU GPL.
 
@@ -67,28 +70,16 @@ https://fullsiteediting.com
 License: GNU General Public License v2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
-Images
-Images from pxhere.com. Public domain:
+== Images ==
 
-https://pxhere.com/en/photo/633680
-https://pxhere.com/en/photo/527808
-https://pxhere.com/en/photo/527819
-https://pxhere.com/en/photo/1218703
-https://pxhere.com/en/photo/527791
-https://pxhere.com/en/photo/527794
-https://pxhere.com/en/photo/527789
-https://pxhere.com/en/photo/527793
-https://pxhere.com/en/photo/527822
-https://pxhere.com/en/photo/527825
-https://pxhere.com/en/photo/527810
+Images from pxhere.com. CC0 licenced:
 
-Images from pexels.com, CC0 licenced (https://www.pexels.com/license/):
-https://www.pexels.com/photo/woman-in-grey-long-sleeved-shirt-2787341/
-https://www.pexels.com/photo/woman-wearing-black-hoodie-2787351/
-https://www.pexels.com/photo/photo-of-a-beautiful-woman-3093939/
-https://www.pexels.com/photo/woman-wearing-brown-fur-beanies-and-white-and-balck-top-2681751/
-https://www.pexels.com/photo/photo-of-laughing-woman-in-white-fur-coat-and-shiny-dress-standing-in-front-of-gray-wall-3769148/
-https://www.pexels.com/photo/woman-wearing-gray-shirt-holding-head-428338/
-https://www.pexels.com/photo/woman-wearing-black-full-zip-leather-jacket-leaning-on-black-metal-fence-2916814/
-
-Shopping cart icon by Icons8: https://icons8.com/icon/59997/shopping-cart
+https://pxhere.com/en/photo/633680?utm_content=shareClip&utm_medium=referral&utm_source=pxhere
+https://pxhere.com/en/photo/527819?utm_content=shareClip&utm_medium=referral&utm_source=pxhere
+https://pxhere.com/en/photo/123572?utm_content=shareClip&utm_medium=referral&utm_source=pxhere
+https://pxhere.com/en/photo/969555?utm_content=shareClip&utm_medium=referral&utm_source=pxhere
+https://pxhere.com/en/photo/628707?utm_content=shareClip&utm_medium=referral&utm_source=pxhere
+https://pxhere.com/en/photo/804917?utm_content=shareClip&utm_medium=referral&utm_source=pxhere
+https://pxhere.com/en/photo/834615?utm_content=shareClip&utm_medium=referral&utm_source=pxhere
+https://pxhere.com/en/photo/510074?utm_content=shareClip&utm_medium=referral&utm_source=pxhere
+https://pxhere.com/en/photo/1653509?utm_content=shareClip&utm_medium=referral&utm_source=pxhere

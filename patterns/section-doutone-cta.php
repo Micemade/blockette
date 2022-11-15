@@ -10,7 +10,7 @@
  * @since 1.0.0
  */
 
-$image = get_theme_file_uri( 'assets/images/pexels-ivan-oboleninov-2916814.jpg' );
+$image = get_theme_file_uri( 'assets/images/1653509-pxhere.com.jpg' );
 ?>
 
 <!-- wp:group {"align":"full","style":{"spacing":{"margin":{"top":"12vh","bottom":"12vh"}}},"layout":{"inherit":true}} -->

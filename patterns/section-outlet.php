@@ -39,20 +39,21 @@ $image_02 = get_theme_file_uri( 'assets/images/model-jeans-fashion-633680-pxhere
 		<!-- /wp:paragraph -->
 
 		<!-- wp:heading {"textColor":"foreground","className":"blockette-animate blockette-move-down","fontSize":"big"} -->
-		<h2 class="blockette-animate blockette-move-down has-foreground-color has-text-color has-big-font-size"> →
-			<strong><?php echo esc_html_x( 'Last season', 'Sample text for the heading', 'blockette' ); ?> <mark class="has-inline-color has-primary-color"><?php echo esc_html_x( 'OUTLET', 'Sample text for the heading', 'blockette' ); ?></mark></strong></h2>
+		<h2 class="blockette-animate blockette-move-down has-foreground-color has-text-color has-big-font-size"> <mark class="has-inline-color has-primary-color">→</mark> <?php echo esc_html_x( 'Last season', 'Sample text for the heading', 'blockette' ); ?> <?php echo esc_html_x( 'outlet', 'Sample text for the heading', 'blockette' ); ?></h2>
 		<!-- /wp:heading -->
 	</div>
 	<!-- /wp:group -->
 
 	<!-- wp:columns {"align":"wide"} -->
 	<div class="wp-block-columns alignwide">
+
 		<!-- wp:column {"width":"33.38%","style":{"spacing":{"padding":{"top":"2vw","right":"2vw","bottom":"2vw","left":"2vw"}}},"className":"blockette-animate blockette-move-down"} -->
 		<div class="wp-block-column blockette-animate blockette-move-down"
 			style="padding-top:2vw;padding-right:2vw;padding-bottom:2vw;padding-left:2vw;flex-basis:33.38%">
-			<!-- wp:cover {"url":"<?php echo esc_url( $image_01 ); ?>","id":1189,"dimRatio":30,"minHeight":35,"minHeightUnit":"vw","contentPosition":"bottom center","isDark":false,"className":"blockette-box-shadow-big blockette-rounded-corners","style":{"spacing":{"padding":{"top":"2em","right":"2em","bottom":"2em","left":"2em"}}}} -->
-			<div class="wp-block-cover is-light has-custom-content-position is-position-bottom-center blockette-box-shadow-big blockette-rounded-corners"
-				style="padding-top:2em;padding-right:2em;padding-bottom:2em;padding-left:2em;min-height:35vw"><span
+
+			<!-- wp:cover {"url":"<?php echo esc_url( $image_01 ); ?>","id":1189,"dimRatio":30,"minHeight":35,"minHeightUnit":"vw","contentPosition":"bottom center","isDark":false,"className":"blockette-rounded-corners","style":{"spacing":{"padding":{"top":"4vw","right":"4vw","bottom":"4vw","left":"4vw"}}}} -->
+			<div class="wp-block-cover is-light has-custom-content-position is-position-bottom-center blockette-rounded-corners"
+				style="padding-top:4vw;padding-right:4vw;padding-bottom:4vw;padding-left:4vw;min-height:35vw"><span
 					aria-hidden="true"
 					class="wp-block-cover__background has-background-dim-30 has-background-dim"></span><img
 					class="wp-block-cover__image-background wp-image-1189" alt=""
@@ -70,7 +71,7 @@ $image_02 = get_theme_file_uri( 'assets/images/model-jeans-fashion-633680-pxhere
 					<div class="wp-block-buttons">
 						<!-- wp:button {"fontSize":"small"} -->
 						<div class="wp-block-button has-custom-font-size has-small-font-size">
-							<a class="wp-block-button__link">
+							<a class="wp-block-button__link wp-element-button">
 								<?php echo esc_html_x( 'Browse Casual Fashion', 'Sample text for the button', 'blockette' ); ?>
 							</a>
 						</div>
@@ -80,6 +81,7 @@ $image_02 = get_theme_file_uri( 'assets/images/model-jeans-fashion-633680-pxhere
 				</div>
 			</div>
 			<!-- /wp:cover -->
+
 		</div>
 		<!-- /wp:column -->
 
@@ -109,9 +111,8 @@ $image_02 = get_theme_file_uri( 'assets/images/model-jeans-fashion-633680-pxhere
 			</h3>
 			<!-- /wp:heading -->
 
-			<!-- wp:cover {"url":"<?php echo esc_url( $image_02 ); ?>","id":1187,"dimRatio":30,"minHeight":35,"minHeightUnit":"vw","contentPosition":"center center","isDark":false,"className":"blockette-box-shadow-big blockette-rounded-corners","style":{"spacing":{"padding":{"top":"2em","right":"2em","bottom":"2em","left":"2em"}}}} -->
-			<div class="wp-block-cover is-light blockette-box-shadow-big blockette-rounded-corners"
-				style="padding-top:2em;padding-right:2em;padding-bottom:2em;padding-left:2em;min-height:35vw"><span
+			<!-- wp:cover {"url":"<?php echo esc_url( $image_02 ); ?>","id":1187,"dimRatio":30,"minHeight":35,"minHeightUnit":"vw","contentPosition":"bottom center","isDark":false,"className":"blockette-rounded-corners","style":{"spacing":{"padding":{"top":"4vw","right":"4vw","bottom":"4vw","left":"4vw"}}}} -->
+			<div class="wp-block-cover is-light has-custom-content-position is-position-bottom-center blockette-rounded-corners" style="padding-top:4vw;padding-right:4vw;padding-bottom:4vw;padding-left:4vw;min-height:35vw"><span
 					aria-hidden="true"
 					class="wp-block-cover__background has-background-dim-30 has-background-dim"></span><img
 					class="wp-block-cover__image-background wp-image-1187" alt=""
@@ -130,7 +131,7 @@ $image_02 = get_theme_file_uri( 'assets/images/model-jeans-fashion-633680-pxhere
 					<div class="wp-block-buttons">
 						<!-- wp:button {"fontSize":"small"} -->
 						<div class="wp-block-button has-custom-font-size has-small-font-size">
-							<a class="wp-block-button__link">
+							<a class="wp-block-button__link wp-element-button">
 								<?php echo esc_html_x( 'Browse Hair Extensions', 'Sample text for the button', 'blockette' ); ?>
 							</a>
 						</div>
@@ -142,6 +143,7 @@ $image_02 = get_theme_file_uri( 'assets/images/model-jeans-fashion-633680-pxhere
 			<!-- /wp:cover -->
 		</div>
 		<!-- /wp:column -->
+
 	</div>
 	<!-- /wp:columns -->
 

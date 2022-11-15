@@ -10,7 +10,7 @@
  * @since 1.0.0
  */
 
-$image = get_theme_file_uri( 'assets/images/pexels-ali-pazani-2681751.webp' );
+$image = get_theme_file_uri( 'assets/images/834615-pxhere.com.jpg' );
 ?>
 
 <!-- wp:cover {"url":"<?php echo esc_url( $image ); ?>","id":1201,"dimRatio":30,"overlayColor":"black","minHeight":30,"minHeightUnit":"vw","align":"full","style":{"color":{"duotone":["#2b1c25","#e07a5f"]}}} -->

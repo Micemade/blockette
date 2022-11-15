@@ -2,7 +2,6 @@
 Theme Name: Blockette
 Author: Micemade
 Author URI: https://micemade.com
-Theme URI: https://micemade.com/blockette
 Description: WordPress Block theme, created for Full Site Editing, adapted to WooCommerce plugin. Features three additional global style variations.
 Tags: site-editor, full-site-editing, editor-style, block-styles, block-patterns, patterns, templates, template-parts
 Text Domain: blockette
@@ -42,14 +41,14 @@ body {
  */
 @media screen and (min-width: 782px) {
 	.is-style-blockette-sticky,
-	.is-style-blockette-sticky-shadow {
+	.is-style-blockette-sticky-no-shadow {
 		position: sticky;
 		top: 0;
 		z-index: 999;
 	}
 	/* Sticky header if WP admin bar is on. */
 	.admin-bar .is-style-blockette-sticky,
-	.admin-bar .is-style-blockette-sticky-shadow {
+	.admin-bar .is-style-blockette-sticky-no-shadow {
 		top: 32px;
 	}
 }
@@ -63,7 +62,7 @@ body {
 /* Mobile WP admin bar */
 @media screen and (max-width: 782px) {
 	.admin-bar .has-modal-open {
-		top: 46px
+		top: 46px;
 	}
 }
 

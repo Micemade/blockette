@@ -10,7 +10,7 @@
  * @since 1.0.0
  */
 
-$image = get_theme_file_uri( 'assets/images/pexels-ali-pazani-2787351.webp' );
+$image = get_theme_file_uri( 'assets/images/628707-pxhere.com.jpg' );
 ?>
 
 <!-- wp:group {"align":"wide","style":{"spacing":{"margin":{"top":"0px","bottom":"0px"},"padding":{"top":"0px","right":"0px","bottom":"0px","left":"0px"}}},"gradient":"vertical-background-secondary","layout":{"inherit":false}} -->

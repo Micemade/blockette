@@ -10,9 +10,9 @@
  * @since 1.0.0
  */
 
-$image_01 = get_theme_file_uri( 'assets/images/pexels-ivan-oboleninov-2916814.jpg' );
-$image_02 = get_theme_file_uri( 'assets/images/pexels-spencer-selover-428338.jpg' );
-$image_03 = get_theme_file_uri( 'assets/images/pexels-andrea-piacquadio-3769148.webp' );
+$image_01 = get_theme_file_uri( 'assets/images/1653509-pxhere.com.jpg' );
+$image_02 = get_theme_file_uri( 'assets/images/123572-pxhere.com.jpg' );
+$image_03 = get_theme_file_uri( 'assets/images/510074-pxhere.com.jpg' );
 ?>
 
 <!-- wp:group {"align":"full","style":{"spacing":{"padding":{"top":"8vw","bottom":"8vw"}}},"backgroundColor":"secondary","layout":{"inherit":true}} -->

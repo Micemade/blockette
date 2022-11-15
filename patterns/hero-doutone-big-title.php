@@ -10,7 +10,7 @@
  * @since 1.0.0
  */
 
-$image = get_theme_file_uri( 'assets/images/pexels-spencer-selover-428338.jpg' );
+$image = get_theme_file_uri( 'assets/images/123572-pxhere.com.jpg' );
 ?>
 
 <!-- wp:cover {"url":"<?php echo esc_url( $image ); ?>","id":1185,"dimRatio":0,"focalPoint":{"x":"0.50","y":"0.50"},"minHeight":30,"minHeightUnit":"vw","contentPosition":"center center","isDark":false,"align":"wide","style":{"color":{"duotone":["#e07a5f","#F9F9F9"]},"spacing":{"padding":{"top":"2vw","right":"2vw","bottom":"2vw","left":"2vw"}}}} -->

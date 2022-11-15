@@ -10,7 +10,7 @@
  * @since 1.0.0
  */
 
-$image = get_theme_file_uri( 'assets/images/pexels-ivan-oboleninov-2916814.jpg' );
+$image = get_theme_file_uri( 'assets/images/1653509-pxhere.com.jpg' );
 ?>
 
 <!-- wp:cover {"url":"<?php echo esc_url( $image ); ?>","id":1350,"dimRatio":60,"focalPoint":{"x":"0.50","y":"0.40"},"minHeight":50,"minHeightUnit":"vw","contentPosition":"center center","align":"full","style":{"color":{"duotone":["#2b1c25","#F9F9F9"]}}} -->

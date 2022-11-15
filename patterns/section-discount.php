@@ -10,15 +10,20 @@
  * @since 1.0.0
  */
 
-$image = get_theme_file_uri( 'assets/images/pexels-andrea-piacquadio-3769148.webp' );
+$image = get_theme_file_uri( 'assets/images/510074-pxhere.com.jpg' );
 ?>
 
 <!-- wp:group {"align":"full","style":{"spacing":{"padding":{"top":"0px","right":"0px","bottom":"0px","left":"0px"},"blockGap":"0px","margin":{"top":"0px","bottom":"0px"}}},"layout":{"inherit":true}} -->
-<div class="wp-block-group alignfull" id="separator-rainbow"
+<div class="wp-block-group alignfull"
 	style="margin-top:0px;margin-bottom:0px;padding-top:0px;padding-right:0px;padding-bottom:0px;padding-left:0px">
-	<!-- wp:cover {"url":"<?php echo esc_url( $image ); ?>","id":1202,"dimRatio":50,"focalPoint":{"x":"0.72","y":"0.25"},"minHeight":60,"minHeightUnit":"vh","contentPosition":"bottom center","isDark":false,"align":"full","style":{"spacing":{"padding":{"top":"0px","right":"0px","bottom":"0px","left":"0px"}}}} -->
+
+	<!-- wp:spacer {"height":"8vw"} -->
+	<div style="height:8vw" aria-hidden="true" class="wp-block-spacer"></div>
+	<!-- /wp:spacer -->
+
+	<!-- wp:cover {"url":"<?php echo esc_url( $image ); ?>","id":1202,"dimRatio":50,"focalPoint":{"x":"0.72","y":"0.25"},"minHeight":35,"minHeightUnit":"vh","contentPosition":"bottom center","isDark":false,"align":"full","style":{"spacing":{"padding":{"top":"0px","right":"0px","bottom":"0px","left":"0px"}}}} -->
 	<div class="wp-block-cover alignfull is-light has-custom-content-position is-position-bottom-center"
-		style="padding-top:0px;padding-right:0px;padding-bottom:0px;padding-left:0px;min-height:60vh"><span
+		style="padding-top:0px;padding-right:0px;padding-bottom:0px;padding-left:0px;min-height:35vh"><span
 			aria-hidden="true" class="wp-block-cover__background has-background-dim"></span><img
 			class="wp-block-cover__image-background wp-image-1202" alt=""
 			src="<?php echo esc_url( $image ); ?>"
@@ -26,16 +31,13 @@ $image = get_theme_file_uri( 'assets/images/pexels-andrea-piacquadio-3769148.web
 		<div class="wp-block-cover__inner-container">
 			<!-- wp:group {"className":"blockette-z-index-top","layout":{"inherit":true}} -->
 			<div class="wp-block-group blockette-z-index-top">
-				<!-- wp:spacer {"height":"4vw"} -->
-				<div style="height:4vw" aria-hidden="true" class="wp-block-spacer"></div>
-				<!-- /wp:spacer -->
 
 				<!-- wp:columns -->
 				<div class="wp-block-columns">
 					<!-- wp:column {"width":"50%","className":"blockette-offset-bottom"} -->
 					<div class="wp-block-column blockette-offset-bottom" style="flex-basis:50%">
-						<!-- wp:spacer {"height":"10vw"} -->
-						<div style="height:10vw" aria-hidden="true" class="wp-block-spacer"></div>
+						<!-- wp:spacer {"height":"4vw"} -->
+						<div style="height:4vw" aria-hidden="true" class="wp-block-spacer"></div>
 						<!-- /wp:spacer -->
 
 						<!-- wp:group {"style":{"spacing":{"padding":{"top":"2vw","right":"2vw","bottom":"2vw","left":"2vw"}},"border":{"width":"0px","style":"none"}},"backgroundColor":"primary","className":"blockette-animate blockette-move-right blockette-box-shadow-big blockette-rounded-corners","layout":{"type":"flex","orientation":"vertical","justifyContent":"center"}} -->
@@ -55,9 +57,7 @@ $image = get_theme_file_uri( 'assets/images/pexels-andrea-piacquadio-3769148.web
 
 							<!-- wp:paragraph {"textColor":"secondary","className":"blockette-animate blockette-move-left blockette-delay-","fontSize":"medium"} -->
 							<p class="blockette-animate blockette-move-left blockette-delay- has-secondary-color has-text-color has-medium-font-size">
-								→ <strong>
-									<?php echo esc_html_x( 'See discounted dresses', 'Sample text for the paragraph', 'blockette' ); ?>
-								</strong>
+								→ <?php echo esc_html_x( 'Browse dresses', 'Sample text for the paragraph', 'blockette' ); ?>
 							</p>
 							<!-- /wp:paragraph -->
 						</div>
@@ -65,8 +65,8 @@ $image = get_theme_file_uri( 'assets/images/pexels-andrea-piacquadio-3769148.web
 					</div>
 					<!-- /wp:column -->
 
-					<!-- wp:column {"width":"50%"} -->
-					<div class="wp-block-column" style="flex-basis:50%">
+					<!-- wp:column {"width":"50%","className":"blockette-offset-top"} -->
+					<div class="wp-block-column blockette-offset-top" style="flex-basis:50%">
 						<!-- wp:group {"style":{"spacing":{"padding":{"top":"2vw","right":"2vw","bottom":"2vw","left":"2vw"}},"border":{"width":"0px","style":"none"}},"backgroundColor":"secondary","className":"blockette-animate blockette-move-right blockette-box-shadow-big blockette-rounded-corners","layout":{"type":"flex","orientation":"vertical","justifyContent":"center"}} -->
 						<div class="wp-block-group blockette-animate blockette-move-right blockette-box-shadow-big blockette-rounded-corners has-secondary-background-color has-background"
 							style="border-style:none;border-width:0px;padding-top:2vw;padding-right:2vw;padding-bottom:2vw;padding-left:2vw">
@@ -84,7 +84,7 @@ $image = get_theme_file_uri( 'assets/images/pexels-andrea-piacquadio-3769148.web
 
 							<!-- wp:paragraph {"className":"blockette-animate blockette-move-left blockette-delay-","fontSize":"medium"} -->
 							<p class="blockette-animate blockette-move-left blockette-delay- has-medium-font-size"> →
-								<?php echo esc_html_x( 'See beauty products', 'Sample text for the paragraph', 'blockette' ); ?>
+								<?php echo esc_html_x( 'Beauty products', 'Sample text for the paragraph', 'blockette' ); ?>
 							</p>
 							<!-- /wp:paragraph -->
 						</div>

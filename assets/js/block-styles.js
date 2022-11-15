@@ -1,11 +1,17 @@
 "use strict";
 
-if (typeof wp !== 'undefined') {
-	// Unregister block styles.
-	wp.domReady(() => {
-		wp.blocks.unregisterBlockStyle('core/quote', 'large');
-		wp.blocks.unregisterBlockStyle('core/quote', 'plain');
-	});
+(function () {
 
-}
+	const wp = (typeof window.wp !== 'undefined') ? window.wp : null;
 
+	if (wp) {
+		// Unregister block styles.
+		wp.domReady(() => {
+			wp.blocks.unregisterBlockStyle('core/quote', 'large');
+			wp.blocks.unregisterBlockStyle('core/quote', 'plain');
+		});
+		console.log("Radi ? Radi!");
+		console.log(wp);
+	}
+
+})();
