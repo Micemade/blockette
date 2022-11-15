@@ -10,8 +10,6 @@
 			wp.blocks.unregisterBlockStyle('core/quote', 'large');
 			wp.blocks.unregisterBlockStyle('core/quote', 'plain');
 		});
-		console.log("Radi ? Radi!");
-		console.log(wp);
 	}
 
 })();
