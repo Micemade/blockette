@@ -8,7 +8,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Language-Team: Micemade <alen@micemade.com>\n"
 "Last-Translator: Alen Sirola <alen@micemade.com>\n"
-"POT-Creation-Date: 2022-11-10 19:53+0000\n"
+"POT-Creation-Date: 2022-11-16 10:42+0000\n"
 "Report-Msgid-Bugs-To: https://micemade.com/contact/\n"
 "X-Poedit-Basepath: ..\n"
 "X-Poedit-KeywordsList: __;_e;_ex:1,2c;_n:1,2;_n_noop:1,2;_nx:1,2,4c;_nx_noop:1,2,3c;_x:1,2c;esc_attr__;esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c\n"
@@ -152,19 +152,19 @@ msgctxt "Sample text for button"
 msgid "Check out our Beauty products"
 msgstr ""
 
-#: patterns/section-discount.php:46
+#: patterns/section-discount.php:48
 msgctxt "Sample text for the paragraph"
 msgid "Spring/Summer Dresses"
 msgstr ""
 
-#: patterns/section-discount.php:52
+#: patterns/section-discount.php:54
 msgctxt "Sample text for the paragraph"
 msgid "10%"
 msgstr ""
 
-#: patterns/section-discount.php:59
+#: patterns/section-discount.php:60
 msgctxt "Sample text for the paragraph"
-msgid "Beauty products"
+msgid "Browse dresses"
 msgstr ""
 
 #: patterns/section-discount.php:75
@@ -282,62 +282,62 @@ msgctxt "Sample text for the section"
 msgid "Something that should not be ignored ..."
 msgstr ""
 
-#: patterns/section-outlet.php:43
+#: patterns/section-outlet.php:42
 msgctxt "Sample text for the heading"
 msgid "Last season"
 msgstr ""
 
-#: patterns/section-outlet.php:43
+#: patterns/section-outlet.php:42
 msgctxt "Sample text for the heading"
-msgid "OUTLET"
-msgstr ""
-
-#: patterns/section-outlet.php:64
-msgctxt "Sample text for the section"
-msgid "Nature,"
+msgid "outlet"
 msgstr ""
 
 #: patterns/section-outlet.php:65
 msgctxt "Sample text for the section"
+msgid "Nature,"
+msgstr ""
+
+#: patterns/section-outlet.php:66
+msgctxt "Sample text for the section"
 msgid " in the common sense, refers to essences unchanged by man; space, the air, the river, the leaf."
 msgstr ""
 
-#: patterns/section-outlet.php:74
+#: patterns/section-outlet.php:75
 msgctxt "Sample text for the button"
 msgid "Browse Casual Fashion"
 msgstr ""
 
-#: patterns/section-outlet.php:96
+#: patterns/section-outlet.php:98
 msgctxt "Sample text for the blockquote"
 msgid "\"Beauty is within, but any help is much appreciated...\""
 msgstr ""
 
-#: patterns/section-outlet.php:96
+#: patterns/section-outlet.php:98
 msgctxt "Sample text for the blockquote"
 msgid "Pablo Goya"
 msgstr ""
 
-#: patterns/section-outlet.php:108
+#: patterns/section-outlet.php:110
 msgctxt "Sample text for the heading"
 msgid "Hair extensions"
 msgstr ""
 
-#: patterns/section-outlet.php:123
+#: patterns/section-outlet.php:124
 msgctxt "Sample text for the section"
 msgid "Extend your natural self, be proud of your greater self."
 msgstr ""
 
-#: patterns/section-outlet.php:124
+#: patterns/section-outlet.php:125
 msgctxt "Sample text for the section"
 msgid " Don't hesitate to fascinate"
 msgstr ""
 
-#: patterns/section-outlet.php:125
+#: patterns/section-outlet.php:126
 msgctxt "Sample text for the section"
 msgid "Everyone ..."
 msgstr ""
 
-#: patterns/section-outlet.php:134
+#: patterns/section-outlet.php:135
 msgctxt "Sample text for the button"
 msgid "Browse Hair Extensions"
 msgstr ""
@@ -409,15 +409,15 @@ msgid "Search results"
 msgstr ""
 
 #: inc/classes/class-block-styles.php:59
-msgid "Sticky"
+msgid "No shadow"
 msgstr ""
 
 #: inc/classes/class-block-styles.php:60
-msgid "Shadow"
+msgid "Sticky"
 msgstr ""
 
 #: inc/classes/class-block-styles.php:61
-msgid "Sticky shadowed"
+msgid "Sticky, no shadow"
 msgstr ""
 
 #: inc/classes/class-block-styles.php:64
@@ -429,7 +429,7 @@ msgid "Pill button"
 msgstr ""
 
 #: inc/classes/class-block-styles.php:66
-msgid "With shadow"
+msgid "Soft shadow"
 msgstr ""
 
 #: inc/classes/class-block-styles.php:69
@@ -448,49 +448,33 @@ msgstr ""
 msgid "Box shadow"
 msgstr ""
 
-#: inc/classes/class-block-styles.php:85, inc/classes/class-block-styles.php:88, inc/classes/class-block-styles.php:91
+#: inc/classes/class-block-styles.php:85, inc/classes/class-block-styles.php:88, inc/classes/class-block-styles.php:91, inc/classes/class-block-styles.php:94
 msgid "Text shadow"
 msgstr ""
 
-#: inc/classes/class-block-styles.php:92
+#: inc/classes/class-block-styles.php:95
 msgid "Gradient 1"
 msgstr ""
 
-#: inc/classes/class-block-styles.php:93
+#: inc/classes/class-block-styles.php:96
 msgid "Gradient 2"
 msgstr ""
 
-#: inc/classes/class-block-styles.php:94
+#: inc/classes/class-block-styles.php:97
 msgid "Gradient 3"
 msgstr ""
 
-#: inc/classes/class-block-styles.php:95
+#: inc/classes/class-block-styles.php:98
 msgid "Gradient 4"
 msgstr ""
 
-#: inc/classes/class-block-styles.php:98
+#: inc/classes/class-block-styles.php:101
 msgid "Dashed"
 msgstr ""
 
-#: inc/classes/class-init.php:141
+#: inc/classes/class-init.php:163
 msgctxt "Used if post or pages has no title"
 msgid "(No title)"
-msgstr ""
-
-#: inc/classes/class-init.php:271
-msgid "Blockette site editor"
-msgstr ""
-
-#: inc/classes/class-init.php:284
-msgid "Site editor"
-msgstr ""
-
-#: inc/classes/class-init.php:294, inc/classes/class-init.php:297
-msgid "Templates"
-msgstr ""
-
-#: inc/classes/class-init.php:307, inc/classes/class-init.php:310
-msgid "Template parts"
 msgstr ""
 
 #: inc/patterns/woocommerce-featured-categories.php:32

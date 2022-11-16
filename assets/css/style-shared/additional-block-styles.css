@@ -1,3 +1,9 @@
+/*
+ * Style-shared.css and style-shared.min.css are created from
+ * CSS files in "style-shared" folder using gulp tasks.
+ * Editing style-shared.css and style-shared.min.css are not recommended.
+ */
+
 /* Z indexing elements - add to Block Additional CSS classes */
 .blockette-z-index-zero {
 	z-index: 0;

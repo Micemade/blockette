@@ -34,8 +34,14 @@ gulp.task('clean-blocks', () => {
 		.pipe(clean());
 });
 
-gulp.task('minify-shared', () => {
+gulp.task('concat-shared', () => {
 	return gulp.src('assets/css/style-shared/*.css')
+		.pipe(concatCss('style-shared.css'))
+		.pipe(gulp.dest('assets/css/'));
+});
+
+gulp.task('minify-shared', () => {
+	return gulp.src('assets/css/style-shared.css')
 		.pipe(concatCss('style-shared.min.css'))
 		.pipe(uglifycss())
 		.pipe(gulp.dest('assets/css/'));
@@ -71,6 +77,7 @@ gulp.task(
 	gulp.series(
 		'clean-shared',
 		'clean-blocks',
+		'concat-shared',
 		'minify-shared',
 		'minify-blocks'
 	)
