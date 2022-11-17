@@ -103,6 +103,9 @@ class Init {
 	 */
 	public function setup() {
 
+		// Textdomain.
+		load_theme_textdomain( 'blockette', get_parent_theme_file_path( 'languages' ) );
+
 		add_theme_support( 'wp-block-styles' );
 		// Styles applied to frontend and editor.
 		add_editor_style( BLOCKETTE_URI . 'assets/css/style-shared.min.css' );
