@@ -3,12 +3,12 @@ Contributors: Micemade
 Tested up to: 6.0.2
 Requires at least: 6.0
 Requires PHP: 7.4
-Version: 1.0.3
+Version: 1.0.4
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Copyright: Micemade
 
-A full site editing block theme, made for creating eCommerce websites with WooCommerce plugin. Includes custom templates for WooCommerce pages, patterns and 6 unique global style variations.
+WordPress Block theme, created for Full Site Editing, adapted to WooCommerce plugin. Features additional global style variations, custom templates for WooCommerce pages, and patterns.
 
 === Folder structure ===
 
@@ -28,6 +28,21 @@ readme.txt    -Information about the theme.
 screenshot.png
 
 == Changelog ==
+1.0.4
+* Changed tags in style.css
+* Updated readme.txt
+
+1.0.3
+* Added load_text_domain and languages/blockette.pot
+
+1.0.2
+* Optimized images
+* Added un-minified assets/css/style-shared.css
+
+1.0.1
+* assets/images - replaced demo images for proper licencing
+* Refactored assets/js/index.js for global scope
+
 1.0.0 Initial release
 
 == Copyright ==
