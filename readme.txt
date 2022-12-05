@@ -3,7 +3,7 @@ Contributors: Micemade
 Tested up to: 6.0.2
 Requires at least: 6.0
 Requires PHP: 7.4
-Version: 1.0.4
+Version: 1.0.3
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Copyright: Micemade
@@ -28,12 +28,10 @@ readme.txt    -Information about the theme.
 screenshot.png
 
 == Changelog ==
-1.0.4
+1.0.3
+* Added load_theme_textdomain for languages/blockette.pot
 * Changed tags in style.css
 * Updated readme.txt
-
-1.0.3
-* Added load_text_domain and languages/blockette.pot
 
 1.0.2
 * Optimized images
@@ -41,7 +39,7 @@ screenshot.png
 
 1.0.1
 * assets/images - replaced demo images for proper licencing
-* Refactored assets/js/index.js for global scope
+* Refactored assets/js/index.js for global scope fix
 
 1.0.0 Initial release
 
