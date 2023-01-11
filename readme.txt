@@ -28,6 +28,9 @@ readme.txt    -Information about the theme.
 screenshot.png
 
 == Changelog ==
+1.0.4
+* archive-product.html - Beta Product query block loaded conditionally with legacy products template fallback.
+
 1.0.3
 * Added load_theme_textdomain for languages/blockette.pot
 * Changed tags in style.css
