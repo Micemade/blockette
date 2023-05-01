@@ -28,6 +28,11 @@ readme.txt    -Information about the theme.
 screenshot.png
 
 == Changelog ==
+
+1.0.5.
+* archive-product.html - updated the product query block template (Product query pattern).
+* product-search-results.html - updated product search template.
+
 1.0.4
 * archive-product.html - Beta Product query block loaded conditionally with legacy products template fallback.
 

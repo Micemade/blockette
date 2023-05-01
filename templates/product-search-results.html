@@ -1,28 +1,64 @@
-<!-- wp:template-part {"slug":"header","tagName":"header","className":"site-header is-style-blockette-sticky"} /-->
+<!-- wp:template-part {"slug":"header","theme":"blockette","tagName":"header","className":"site-header is-style-blockette-sticky"} /-->
 
-<!-- wp:group {"tagName":"main","align":"full","style":{"spacing":{"padding":{"top":"calc(var(--wp--custom--v-spacing, 1.25rem) *3)","bottom":"calc(var(--wp--custom--v-spacing, 1.25rem) *2)"}}},"layout":{"inherit":true}} -->
+<!-- wp:group {"tagName":"main","align":"full","style":{"spacing":{"padding":{"top":"calc(var(--wp--custom--v-spacing, 1.25rem) *3)","bottom":"calc(var(--wp--custom--v-spacing, 1.25rem) *2)"}}},"layout":{"inherit":true,"type":"constrained"}} -->
 <main class="wp-block-group alignfull"
 	style="padding-top:calc(var(--wp--custom--v-spacing, 1.25rem) *3);padding-bottom:calc(var(--wp--custom--v-spacing, 1.25rem) *2)">
-
 	<!-- wp:query-title {"type":"archive","textAlign":"center"} /-->
 
 	<!-- wp:spacer {"height":"var(--wp--custom--v-spacing, 4vw)"} -->
 	<div style="height:var(--wp--custom--v-spacing, 4vw)" aria-hidden="true" class="wp-block-spacer"></div>
 	<!-- /wp:spacer -->
 
-	<!-- wp:woocommerce/legacy-template {"template":"archive-product","align":"wide"} /-->
+	<!-- wp:query {"queryId":2,"query":{"perPage":9,"pages":0,"offset":0,"postType":"product","order":"asc","orderBy":"title","author":"","search":"","exclude":[],"sticky":"","inherit":true,"__woocommerceAttributes":[],"__woocommerceStockStatus":["instock","outofstock","onbackorder"]},"displayLayout":{"type":"flex","columns":3},"namespace":"woocommerce/product-query","align":"wide"} -->
+	<div class="wp-block-query alignwide"><!-- wp:query-title {"type":"search","showPrefix":false,"align":"wide"} /-->
+
+		<!-- wp:woocommerce/store-notices /-->
+
+		<!-- wp:group {"align":"wide","layout":{"type":"flex","flexWrap":"nowrap","justifyContent":"space-between"}} -->
+		<div class="wp-block-group alignwide"><!-- wp:woocommerce/product-results-count /-->
+
+			<!-- wp:woocommerce/catalog-sorting /-->
+		</div>
+		<!-- /wp:group -->
+
+		<!-- wp:post-template {"__woocommerceNamespace":"woocommerce/product-query/product-template"} -->
+		<!-- wp:woocommerce/product-image {"isDescendentOfQueryLoop":true} /-->
+
+		<!-- wp:post-title {"textAlign":"center","level":3,"isLink":true,"style":{"spacing":{"margin":{"bottom":"0.75rem","top":"0"}}},"fontSize":"medium","__woocommerceNamespace":"woocommerce/product-query/product-title"} /-->
+
+		<!-- wp:woocommerce/product-price {"isDescendentOfQueryLoop":true,"textAlign":"center","style":{"spacing":{"margin":{"bottom":"0.75rem","top":"0"}}}} /-->
+
+		<!-- wp:woocommerce/product-button {"isDescendentOfQueryLoop":true,"textAlign":"center","style":{"spacing":{"margin":{"bottom":"0.75rem","top":"0"}}}} /-->
+		<!-- /wp:post-template -->
+
+		<!-- wp:query-pagination {"layout":{"type":"flex","justifyContent":"center"}} -->
+		<!-- wp:query-pagination-previous /-->
+
+		<!-- wp:query-pagination-numbers /-->
+
+		<!-- wp:query-pagination-next /-->
+		<!-- /wp:query-pagination -->
+
+		<!-- wp:query-no-results {"align":"wide"} -->
+		<!-- wp:paragraph -->
+		<p>No products were found matching your selection.</p>
+		<!-- /wp:paragraph -->
+
+		<!-- wp:search {"showLabel":false,"placeholder":"Search products…","buttonText":"Search","query":{"post_type":"product"}} /-->
+		<!-- /wp:query-no-results -->
+	</div>
+	<!-- /wp:query -->
 
 	<!-- wp:spacer {"height":"4vw"} -->
 	<div style="height:4vw" aria-hidden="true" class="wp-block-spacer"></div>
 	<!-- /wp:spacer -->
 
-	<!-- wp:woocommerce/product-search {"hasLabel":false,"formId":"wc-block-product-search-0"} /-->
+	<!-- wp:search {"label":"Search","placeholder":"Search products…","buttonText":"Search","query":{"post_type":"product"}} /-->
 
 	<!-- wp:spacer {"height":"var(--wp--custom--v-spacing, 4vw)"} -->
 	<div style="height:var(--wp--custom--v-spacing, 4vw)" aria-hidden="true" class="wp-block-spacer"></div>
 	<!-- /wp:spacer -->
-
 </main>
 <!-- /wp:group -->
 
-<!-- wp:template-part {"slug":"footer","tagName":"footer"} /-->
+<!-- wp:template-part {"slug":"footer","theme":"blockette","tagName":"footer"} /-->
